@@ -1,0 +1,18 @@
+
+blockdiag {
+  // set default colors
+  default_node_color = lightblue;
+  
+  // Set labels to nodes.
+  Data [label = "Satellite Stereo Data"];
+  DSM [label = "DSM \n(CARS)"];
+  DHM [label = "DTM and DHM \n(Bulldozer)"];
+  DiffDHM [label = "DHM Diff \n(Demcompare)"];
+  DiffDSM [label = "DSM Diff \n(Demcompare)"];
+
+  Data -> DSM -> DHM -> DiffDHM;
+  Data -> DSM -> DiffDSM;
+
+}
+
+
