@@ -1,0 +1,29 @@
+2023-06-23,17:30:54 [DEBUG]: Error occured during logger init: 
+Reference at 'refs/heads/gh-pages' does not exist
+2023-06-23,17:30:54 [DEBUG]: Starting preprocess
+2023-06-23,17:30:54 [INFO]: Min valid height set by the user0.0
+2023-06-23,17:30:54 [DEBUG]: Compute disturbance mask
+2023-06-23,17:30:54 [INFO]: disturbance mask: Done
+2023-06-23,17:30:54 [DEBUG]: Starting inner_nodata_mask and border_nodata_mask building
+2023-06-23,17:30:54 [INFO]: bulldozer.preprocessing.dsm_preprocess-build_border_nodata_mask: Done (Runtime: 0.12s)
+2023-06-23,17:30:54 [INFO]: inner_nodata_mask and border_nodata_mask generation: Done
+2023-06-23,17:30:54 [INFO]: Preprocess done
+2023-06-23,17:30:54 [INFO]: Starting dtm extraction by Cloth simulation
+2023-06-23,17:30:54 [INFO]: Process level 4...
+2023-06-23,17:30:54 [INFO]: Process level 3...
+2023-06-23,17:30:54 [INFO]: Process level 2...
+2023-06-23,17:30:54 [INFO]: Process level 1...
+2023-06-23,17:30:55 [INFO]: Process level 0...
+2023-06-23,17:30:55 [INFO]: Dtm extraction done
+2023-06-23,17:30:55 [DEBUG]: Starting postprocess
+2023-06-23,17:30:55 [INFO]: Adapt to user resolution 
+2023-06-23,17:30:55 [INFO]: bulldozer.postprocessing.dtm_postprocess-adaptToTargetResolution: Done (Runtime: 0.0s)
+2023-06-23,17:30:55 [INFO]: Fill intermediate DTM
+2023-06-23,17:30:55 [INFO]: bulldozer.postprocessing.dtm_postprocess-buildIntermediateFilledDtm: Done (Runtime: 0.11s)
+2023-06-23,17:30:55 [DEBUG]: Pits mask generation: Start
+2023-06-23,17:30:55 [INFO]: bulldozer.postprocessing.dtm_postprocess-build_pits_mask: Done (Runtime: 0.1s)
+2023-06-23,17:30:55 [INFO]: bulldozer.postprocessing.dtm_postprocess-fill_pits: Done (Runtime: 0.12s)
+2023-06-23,17:30:55 [DEBUG]: DHM generation: Start
+2023-06-23,17:30:55 [INFO]: bulldozer.postprocessing.dtm_postprocess-build_dhm: Done (Runtime: 0.1s)
+2023-06-23,17:30:55 [INFO]: bulldozer.postprocessing.dtm_postprocess-postprocess_pipeline: Done (Runtime: 0.44s)
+2023-06-23,17:30:55 [INFO]: bulldozer.pipeline.bulldozer_pipeline-dsm_to_dtm: Done (Runtime: 1.3s)

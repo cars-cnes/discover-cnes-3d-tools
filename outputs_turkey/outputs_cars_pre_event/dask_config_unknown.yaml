@@ -1,0 +1,441 @@
+array:
+  backend: numpy
+  rechunk:
+    method: tasks
+  slicing:
+    split-large-chunks: null
+  svg:
+    size: 120
+config: /home/duboise/work/src/cars_repos/cars_master/cars/orchestrator/cluster/dask_config
+dataframe:
+  backend: pandas
+  convert-string: false
+  parquet:
+    metadata-task-size-local: 512
+    metadata-task-size-remote: 1
+  shuffle:
+    compression: null
+    method: null
+  shuffle-compression: null
+distributed:
+  adaptive:
+    interval: 1s
+    maximum: .inf
+    minimum: 0
+    target-duration: 5s
+    wait-count: 3
+  admin:
+    event-loop: tornado
+    log-format: '%(asctime)s :: %(name)s - %(levelname)s - %(message)s'
+    log-length: 10000
+    max-error-length: 10000
+    pdb-on-err: false
+    system-monitor:
+      disk: true
+      gil:
+        enabled: true
+        interval: 1ms
+      host-cpu: false
+      interval: 500ms
+    tick:
+      cycle: 1s
+      interval: 20ms
+      limit: 1s
+  client:
+    heartbeat: 5s
+    preload: []
+    preload-argv: []
+    scheduler-info-interval: 2s
+    security-loader: null
+  comm:
+    compression: auto
+    default-scheme: tcp
+    offload: 10MiB
+    recent-messages-log-length: 0
+    require-encryption: false
+    retry:
+      count: 10
+      delay:
+        max: 20s
+        min: 1s
+    shard: 64MiB
+    socket-backlog: 2048
+    tcp:
+      backend: tornado
+    timeouts:
+      connect: 60s
+      tcp: 120s
+    tls:
+      ca-file: null
+      ciphers: null
+      client:
+        cert: null
+        key: null
+      max-version: null
+      min-version: 1.2
+      scheduler:
+        cert: null
+        key: null
+      worker:
+        cert: null
+        key: null
+    ucx:
+      create-cuda-context: null
+      cuda-copy: null
+      environment: {}
+      infiniband: null
+      nvlink: null
+      rdmacm: null
+      tcp: null
+    websockets:
+      shard: 8MiB
+    zstd:
+      level: 3
+      threads: 0
+  dashboard:
+    export-tool: false
+    graph-max-items: 5000
+    link: '{scheme}://{host}:{port}/status'
+    prometheus:
+      namespace: dask
+  deploy:
+    cluster-repr-interval: 500ms
+    lost-worker-timeout: 15s
+  diagnostics:
+    computations:
+      ignore-modules:
+      - distributed
+      - dask
+      - xarray
+      - cudf
+      - cuml
+      - prefect
+      - xgboost
+      max-history: 100
+      nframes: 0
+    erred-tasks:
+      max-history: 100
+    nvml: true
+  logging:
+    bokeh: critical
+    distributed: warning
+    distributed.client: warning
+    distributed.core: warning
+    distributed.nanny: warning
+    distributed.scheduler: warning
+    distributed.worker: warning
+    tornado: critical
+    tornado.application: error
+  nanny:
+    environ: {}
+    pre-spawn-environ:
+      MALLOC_TRIM_THRESHOLD_: 65536
+      MKL_NUM_THREADS: 1
+      OMP_NUM_THREADS: 1
+      OPENBLAS_NUM_THREADS: 1
+    preload: []
+    preload-argv: []
+  rmm:
+    pool-size: null
+  scheduler:
+    active-memory-manager:
+      interval: 2s
+      measure: optimistic
+      policies:
+      - class: distributed.active_memory_manager.ReduceReplicas
+      start: true
+    allowed-failures: 10
+    allowed-imports:
+    - dask
+    - distributed
+    bandwidth: 100000000
+    blocked-handlers: []
+    contact-address: null
+    dashboard:
+      bokeh-application:
+        allow_websocket_origin:
+        - '*'
+        check_unused_sessions_milliseconds: 500
+        keep_alive_milliseconds: 500
+      status:
+        task-stream-length: 1000
+      tasks:
+        task-stream-length: 100000
+      tls:
+        ca-file: null
+        cert: null
+        key: null
+    default-data-size: 1kiB
+    default-task-durations:
+      rechunk-split: 1us
+      split-shuffle: 1us
+    events-cleanup-delay: 1h
+    events-log-length: 100000
+    http:
+      routes:
+      - distributed.http.scheduler.prometheus
+      - distributed.http.scheduler.info
+      - distributed.http.scheduler.json
+      - distributed.http.health
+      - distributed.http.proxy
+      - distributed.http.statics
+    idle-timeout: null
+    locks:
+      lease-timeout: 30s
+      lease-validation-interval: 10s
+    pickle: true
+    preload: []
+    preload-argv: []
+    transition-log-length: 100000
+    unknown-task-duration: 500ms
+    validate: false
+    work-stealing: true
+    work-stealing-interval: 100ms
+    worker-saturation: 1.1
+    worker-ttl: 5 minutes
+  version: 2
+  worker:
+    blocked-handlers: []
+    connections:
+      incoming: 50
+      outgoing: 50
+    daemon: true
+    http:
+      routes:
+      - distributed.http.worker.prometheus
+      - distributed.http.health
+      - distributed.http.statics
+    lifetime:
+      duration: null
+      restart: false
+      stagger: 0
+    memory:
+      max-spill: false
+      monitor-interval: 100ms
+      pause: 0.8
+      rebalance:
+        measure: optimistic
+        recipient-max: 0.6
+        sender-min: 0.3
+        sender-recipient-gap: 0.1
+      recent-to-old-time: 30s
+      spill: 0.7
+      spill-compression: auto
+      target: 0.6
+      terminate: 0.95
+      transfer: 0.1
+    multiprocessing-method: forkserver
+    preload: []
+    preload-argv: []
+    profile:
+      cycle: 1000ms
+      enabled: true
+      interval: 10ms
+      low-level: false
+    resources: {}
+    transfer:
+      message-bytes-limit: 50MB
+    use-file-locking: true
+    validate: true
+jobqueue:
+  htcondor:
+    cancel-command-extra: []
+    cores: null
+    death-timeout: 60
+    disk: null
+    env-extra: null
+    extra: null
+    interface: null
+    job-directives-skip: []
+    job-extra: null
+    job-extra-directives: {}
+    job-script-prologue: []
+    local-directory: null
+    log-directory: null
+    memory: null
+    name: dask-worker
+    processes: null
+    scheduler-options: {}
+    shared-temp-directory: null
+    shebang: '#!/usr/bin/env condor_submit'
+    submit-command-extra: []
+    worker-extra-args: []
+  local:
+    cores: null
+    death-timeout: 60
+    env-extra: null
+    extra: null
+    interface: null
+    job-directives-skip: []
+    job-extra: null
+    job-extra-directives: []
+    job-script-prologue: []
+    local-directory: null
+    log-directory: null
+    memory: null
+    name: dask-worker
+    processes: null
+    scheduler-options: {}
+    shared-temp-directory: null
+    worker-extra-args: []
+  lsf:
+    cores: null
+    death-timeout: 60
+    env-extra: null
+    extra: null
+    interface: null
+    job-directives-skip: []
+    job-extra: null
+    job-extra-directives: []
+    job-script-prologue: []
+    local-directory: null
+    log-directory: null
+    lsf-units: null
+    mem: null
+    memory: null
+    name: dask-worker
+    ncpus: null
+    processes: null
+    project: null
+    queue: null
+    scheduler-options: {}
+    shared-temp-directory: null
+    shebang: '#!/usr/bin/env bash'
+    use-stdin: true
+    walltime: 00:30
+    worker-extra-args: []
+  moab:
+    account: null
+    cores: null
+    death-timeout: 60
+    env-extra: null
+    extra: null
+    interface: null
+    job-directives-skip: []
+    job-extra: null
+    job-extra-directives: []
+    job-script-prologue: []
+    local-directory: null
+    log-directory: null
+    memory: null
+    name: dask-worker
+    processes: null
+    queue: null
+    resource-spec: null
+    scheduler-options: {}
+    shared-temp-directory: null
+    shebang: '#!/usr/bin/env bash'
+    walltime: 00:30:00
+    worker-extra-args: []
+  oar:
+    cores: null
+    death-timeout: 60
+    env-extra: null
+    extra: null
+    interface: null
+    job-directives-skip: []
+    job-extra: null
+    job-extra-directives: []
+    job-script-prologue: []
+    local-directory: null
+    log-directory: null
+    memory: null
+    memory-per-core-property-name: null
+    name: dask-worker
+    processes: null
+    project: null
+    queue: null
+    resource-spec: null
+    scheduler-options: {}
+    shared-temp-directory: null
+    shebang: '#!/usr/bin/env bash'
+    walltime: 00:30:00
+    worker-extra-args: []
+  pbs:
+    account: null
+    cores: null
+    death-timeout: 3000
+    env-extra: []
+    extra: []
+    interface: null
+    job-directives-skip: []
+    job-extra: []
+    job-extra-directives: []
+    job-script-prologue: []
+    local-directory: null
+    log-directory: null
+    memory: null
+    name: cars-dask-worker
+    processes: null
+    project: null
+    queue: null
+    resource-spec: null
+    scheduler-options: {}
+    shared-temp-directory: null
+    shebang: '#!/usr/bin/env bash'
+    walltime: 00:59:00
+    worker-extra-args: []
+  sge:
+    cores: null
+    death-timeout: 60
+    env-extra: null
+    extra: null
+    interface: null
+    job-directives-skip: []
+    job-extra: null
+    job-extra-directives: []
+    job-script-prologue: []
+    local-directory: null
+    log-directory: null
+    memory: null
+    name: dask-worker
+    processes: null
+    project: null
+    queue: null
+    resource-spec: null
+    scheduler-options: {}
+    shared-temp-directory: null
+    shebang: '#!/usr/bin/env bash'
+    walltime: 00:30:00
+    worker-extra-args: []
+  slurm:
+    account: null
+    cores: null
+    death-timeout: 60
+    env-extra: null
+    extra: null
+    interface: null
+    job-cpu: null
+    job-directives-skip: []
+    job-extra: null
+    job-extra-directives: []
+    job-mem: null
+    job-script-prologue: []
+    local-directory: null
+    log-directory: null
+    memory: null
+    name: dask-worker
+    processes: null
+    queue: null
+    scheduler-options: {}
+    shared-temp-directory: null
+    shebang: '#!/usr/bin/env bash'
+    walltime: 00:30:00
+    worker-extra-args: []
+optimization:
+  annotations:
+    fuse: true
+  fuse:
+    active: true
+    ave-width: 1
+    max-depth-new-edges: null
+    max-height: .inf
+    max-width: null
+    rename-keys: true
+    subgraphs: null
+scheduler: processes
+temporary-directory: null
+tokenize:
+  ensure-deterministic: false
+visualization:
+  engine: null

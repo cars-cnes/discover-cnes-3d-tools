@@ -1,0 +1,259 @@
+{
+  "pipeline": "sensors_to_dense_dsm",
+  "orchestrator": {
+    "mode": "local_dask",
+    "profiling": {
+      "activated": false,
+      "mode": "time",
+      "loop_testing": false
+    },
+    "use_memory_logger": false,
+    "nb_workers": 2,
+    "max_ram_per_worker": 2000,
+    "walltime": "00:59:00",
+    "config_name": "unknown",
+    "activate_dashboard": false,
+    "python": null
+  },
+  "inputs": {
+    "sensors": {
+      "one": {
+        "image": "/home/duboise/work/src/discover-cnes-3d-tools/data_turkey/pre_event_img1.tif",
+        "geomodel": "/home/duboise/work/src/discover-cnes-3d-tools/data_turkey/pre_event_img1.geom",
+        "color": "/home/duboise/work/src/discover-cnes-3d-tools/data_turkey/pre_event_color1.tif",
+        "no_data": 0,
+        "geomodel_type": "RPC",
+        "geomodel_filters": null,
+        "mask": null,
+        "classification": null
+      },
+      "two": {
+        "image": "/home/duboise/work/src/discover-cnes-3d-tools/data_turkey/pre_event_img2.tif",
+        "geomodel": "/home/duboise/work/src/discover-cnes-3d-tools/data_turkey/pre_event_img2.geom",
+        "color": "/home/duboise/work/src/discover-cnes-3d-tools/data_turkey/pre_event_color2.tif",
+        "no_data": 0,
+        "geomodel_type": "RPC",
+        "geomodel_filters": null,
+        "mask": null,
+        "classification": null
+      }
+    },
+    "pairing": [
+      [
+        "one",
+        "two"
+      ]
+    ],
+    "initial_elevation": "/home/duboise/work/src/discover-cnes-3d-tools/data_turkey/srtm_dir/N37E036.hgt",
+    "epsg": null,
+    "default_alt": 0,
+    "roi": null,
+    "check_inputs": false,
+    "use_epipolar_a_priori": false,
+    "epipolar_a_priori": {
+      "one_two": {
+        "grid_correction": [
+          [
+            [
+              2.128925071388198,
+              -6.594131194572545e-05
+            ],
+            [
+              -0.00021617459927005138,
+              0.0
+            ]
+          ],
+          [
+            [
+              0.6412293052959949,
+              -2.1954653078243503e-06
+            ],
+            [
+              -0.00011096933917088028,
+              0.0
+            ]
+          ]
+        ],
+        "disparity_range": [
+          -19.40293212890625,
+          8.06858154296875
+        ]
+      }
+    },
+    "geoid": "/home/duboise/work/src/cars_repos/cars_master/cars/pipelines/sensor_to_dense_dsm/../../conf/geoid/egm96.grd"
+  },
+  "output": {
+    "out_dir": "/home/duboise/work/src/discover-cnes-3d-tools/data_turkey/outputs_cars_pre_event",
+    "dsm_basename": "cars_dsm_pre_event.tif",
+    "clr_basename": "clr.tif",
+    "info_basename": "content.json"
+  },
+  "applications": {
+    "grid_generation": {
+      "method": "epipolar",
+      "epi_step": 30,
+      "save_grids": false,
+      "geometry_loader": "SharelocGeometry"
+    },
+    "resampling": {
+      "method": "bicubic",
+      "epi_tile_size": 500,
+      "save_epipolar_image": false,
+      "save_epipolar_color": false
+    },
+    "holes_detection": {
+      "method": "cloud_to_bbox"
+    },
+    "dense_matches_filling.1": {
+      "method": "plane",
+      "interpolation_type": "pandora",
+      "interpolation_method": "mc_cnn",
+      "max_search_distance": 100,
+      "smoothing_iterations": 1,
+      "ignore_nodata_at_disp_mask_borders": true,
+      "ignore_zero_fill_disp_mask_values": true,
+      "ignore_extrema_disp_values": true,
+      "nb_pix": 20,
+      "percent_to_erode": 0.2,
+      "classification": null,
+      "save_disparity_map": false
+    },
+    "dense_matches_filling.2": {
+      "method": "zero_padding",
+      "classification": null,
+      "save_disparity_map": false
+    },
+    "sparse_matching": {
+      "method": "sift",
+      "disparity_margin": 0.02,
+      "elevation_delta_lower_bound": -1000,
+      "elevation_delta_upper_bound": 1000,
+      "epipolar_error_upper_bound": 10.0,
+      "epipolar_error_maximum_bias": 0.0,
+      "disparity_outliers_rejection_percent": 0.1,
+      "minimum_nb_matches": 100,
+      "sift_matching_threshold": 0.6,
+      "sift_n_octave": 8,
+      "sift_n_scale_per_octave": 3,
+      "sift_peak_threshold": 20.0,
+      "sift_edge_threshold": 5.0,
+      "sift_magnification": 2.0,
+      "sift_back_matching": true,
+      "save_matches": false
+    },
+    "dense_matching": {
+      "method": "census_sgm",
+      "min_epi_tile_size": 300,
+      "max_epi_tile_size": 1500,
+      "epipolar_tile_margin_in_percent": 60,
+      "min_elevation_offset": null,
+      "max_elevation_offset": null,
+      "generate_performance_map": false,
+      "perf_eta_max_ambiguity": 0.99,
+      "perf_eta_max_risk": 0.25,
+      "perf_eta_step": 0.04,
+      "perf_ambiguity_threshold": 0.6,
+      "save_disparity_map": false,
+      "loader": "pandora",
+      "loader_conf": {
+        "input": {
+          "nodata_left": -9999,
+          "nodata_right": -9999
+        },
+        "pipeline": {
+          "right_disp_map": {
+            "method": "accurate"
+          },
+          "matching_cost": {
+            "matching_cost_method": "census",
+            "window_size": 5,
+            "subpix": 1
+          },
+          "optimization": {
+            "optimization_method": "sgm",
+            "overcounting": false,
+            "penalty": {
+              "P1": 8,
+              "P2": 32,
+              "p2_method": "constant",
+              "penalty_method": "sgm_penalty"
+            },
+            "sgm_version": "c++",
+            "min_cost_paths": false,
+            "use_confidence": false
+          },
+          "cost_volume_confidence": {
+            "confidence_method": "ambiguity",
+            "eta_max": 0.7,
+            "eta_step": 0.01,
+            "indicator": ""
+          },
+          "disparity": {
+            "disparity_method": "wta",
+            "invalid_disparity": NaN
+          },
+          "refinement": {
+            "refinement_method": "vfit"
+          },
+          "filter": {
+            "filter_method": "median",
+            "filter_size": 3
+          },
+          "validation": {
+            "validation_method": "cross_checking",
+            "cross_checking_threshold": 1.0
+          }
+        }
+      }
+    },
+    "triangulation": {
+      "method": "line_of_sight_intersection",
+      "use_geoid_alt": false,
+      "snap_to_img1": false,
+      "add_msk_info": true,
+      "geometry_loader": "SharelocGeometry",
+      "save_points_cloud": false
+    },
+    "point_cloud_fusion": {
+      "method": "mapping_to_terrain_tiles",
+      "save_points_cloud_as_laz": false,
+      "save_points_cloud_as_csv": false
+    },
+    "point_cloud_outliers_removing.1": {
+      "method": "small_components",
+      "save_points_cloud_as_laz": false,
+      "save_points_cloud_as_csv": false,
+      "activated": false,
+      "on_ground_margin": 11,
+      "connection_distance": 3.0,
+      "nb_points_threshold": 50,
+      "clusters_distance_threshold": null
+    },
+    "point_cloud_outliers_removing.2": {
+      "method": "statistical",
+      "save_points_cloud_as_laz": false,
+      "save_points_cloud_as_csv": false,
+      "activated": false,
+      "k": 50,
+      "std_dev_factor": 5.0
+    },
+    "point_cloud_rasterization": {
+      "method": "simple_gaussian",
+      "dsm_radius": 1,
+      "sigma": null,
+      "grid_points_division_factor": null,
+      "resolution": 0.5,
+      "dsm_no_data": -32768,
+      "color_no_data": 0,
+      "color_dtype": "uint16",
+      "msk_no_data": 65535,
+      "save_color": true,
+      "save_stats": false,
+      "save_msk": false,
+      "save_classif": false,
+      "save_dsm": true,
+      "save_confidence": false,
+      "compute_all": false
+    }
+  }
+}

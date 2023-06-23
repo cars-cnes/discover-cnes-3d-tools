@@ -1,0 +1,153 @@
+{
+  "version": "0.7.1.dev1+g746c266.d20230621",
+  "pipeline": "sensor_to_dense_dsm_pipeline",
+  "inputs": {
+    "sensors": {
+      "one": {
+        "image": "/home/duboise/work/src/discover-cnes-3d-tools/data_turkey/pre_event_img1.tif",
+        "geomodel": "/home/duboise/work/src/discover-cnes-3d-tools/data_turkey/pre_event_img1.geom",
+        "color": "/home/duboise/work/src/discover-cnes-3d-tools/data_turkey/pre_event_color1.tif",
+        "no_data": 0,
+        "geomodel_type": "RPC",
+        "geomodel_filters": null,
+        "mask": null,
+        "classification": null
+      },
+      "two": {
+        "image": "/home/duboise/work/src/discover-cnes-3d-tools/data_turkey/pre_event_img2.tif",
+        "geomodel": "/home/duboise/work/src/discover-cnes-3d-tools/data_turkey/pre_event_img2.geom",
+        "color": "/home/duboise/work/src/discover-cnes-3d-tools/data_turkey/pre_event_color2.tif",
+        "no_data": 0,
+        "geomodel_type": "RPC",
+        "geomodel_filters": null,
+        "mask": null,
+        "classification": null
+      }
+    },
+    "pairing": [
+      [
+        "one",
+        "two"
+      ]
+    ],
+    "initial_elevation": "/home/duboise/work/src/discover-cnes-3d-tools/data_turkey/srtm_dir/N37E036.hgt",
+    "epsg": null,
+    "default_alt": 0,
+    "roi": null,
+    "check_inputs": false,
+    "use_epipolar_a_priori": false,
+    "epipolar_a_priori": {
+      "one_two": {
+        "grid_correction": [
+          [
+            [
+              2.128925071388198,
+              -6.594131194572545e-05
+            ],
+            [
+              -0.00021617459927005138,
+              0.0
+            ]
+          ],
+          [
+            [
+              0.6412293052959949,
+              -2.1954653078243503e-06
+            ],
+            [
+              -0.00011096933917088028,
+              0.0
+            ]
+          ]
+        ],
+        "disparity_range": [
+          -19.40293212890625,
+          8.06858154296875
+        ]
+      }
+    },
+    "geoid": "/home/duboise/work/src/cars_repos/cars_master/cars/pipelines/sensor_to_dense_dsm/../../conf/geoid/egm96.grd"
+  },
+  "applications": {
+    "one_two": {
+      "grid_generation_run": {
+        "epipolar_size_x": 1215,
+        "epipolar_size_y": 1215,
+        "epipolar_origin_x": 0.0,
+        "epipolar_origin_y": 0.0,
+        "epipolar_spacing_x": 30.0,
+        "epipolar_spacing_y": 30.0,
+        "disp_to_alt_ratio": 1.7131309976820916,
+        "left_azimuth_angle": 333.1416370065668,
+        "left_elevation_angle": 73.75669083821056,
+        "right_azimuth_angle": 259.80269946396123,
+        "right_elevation_angle": 78.1505661472169,
+        "convergence_angle": 17.041736155682493
+      },
+      "method": "bicubic",
+      "resampling_run": {},
+      "sparse_matching_run": {
+        "disp_lower_bound": -583.7265225794318,
+        "disp_upper_bound": 583.7265225794318
+      },
+      "matches_filtering": {
+        "raw_matches": null,
+        "filtered_matches": null,
+        "number_matches": 1189,
+        "raw_number_matches": 1228,
+        "before_correction_epi_error_mean": -2.0705058574676514,
+        "before_correction_epi_error_std": 0.48493650555610657,
+        "before_correction_epi_error_max": 6.60113525390625
+      },
+      "grid_correction": {
+        "corrected_filtered_matches": null
+      },
+      "disparity_range_computation_run": {
+        "disparity_margin_param": 0.02,
+        "minimum_disparity": -19.40293212890625,
+        "maximum_disparity": 8.06858154296875
+      },
+      "dense_matching_run": {},
+      "triangulation_run": {
+        "alt_reference": "ellipsoid"
+      }
+    },
+    "cloud_fusion_run": {
+      "epsg": 32637,
+      "margins": 0.5,
+      "number_terrain_tiles": 4,
+      "bounds": [
+        315146.5,
+        4161545.0,
+        315685.5,
+        4162054.0
+      ]
+    },
+    "rasterization_run": {
+      "epsg": 32637,
+      "dsm": "/home/duboise/work/src/discover-cnes-3d-tools/data_turkey/outputs_cars_pre_event/cars_dsm_pre_event.tif",
+      "dsm_no_data": -32768.0,
+      "color_no_data": 0.0,
+      "color": "/home/duboise/work/src/discover-cnes-3d-tools/data_turkey/outputs_cars_pre_event/clr.tif",
+      "msk": null,
+      "disparity_confidence": null,
+      "dsm_mean": null,
+      "dsm_std": null,
+      "dsm_n_pts": null,
+      "dsm_points_in_cell": null
+    }
+  },
+  "pair_preprocessing": {
+    "one_two": {
+      "left_envelope": "/home/duboise/work/src/discover-cnes-3d-tools/data_turkey/outputs_cars_pre_event/one_two/left_envelope.shp",
+      "right_envelope": "/home/duboise/work/src/discover-cnes-3d-tools/data_turkey/outputs_cars_pre_event/one_two/right_envelope.shp",
+      "envelopes_intersection": "/home/duboise/work/src/discover-cnes-3d-tools/data_turkey/outputs_cars_pre_event/one_two/envelopes_intersection.gpkg",
+      "envelopes_intersection_bounding_box": [
+        36.906482794969996,
+        37.582470536381365,
+        36.912457761365175,
+        37.58699840794602
+      ]
+    }
+  }
+}

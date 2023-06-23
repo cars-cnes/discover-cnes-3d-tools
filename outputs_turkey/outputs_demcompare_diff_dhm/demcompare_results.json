@@ -1,0 +1,47 @@
+{
+  "alti_results": {
+    "reproj_coreg_ref": {
+      "path": null,
+      "nodata": -32768,
+      "nb_points": 1073462,
+      "nb_valid_points": 908455
+    },
+    "reproj_coreg_sec": {
+      "path": null,
+      "nodata": -32768,
+      "nb_points": 1073462,
+      "nb_valid_points": 947980
+    },
+    "dz": {
+      "dz_map_path": null,
+      "total_bias_value": 0.59263,
+      "zunit": "m",
+      "percent": 80.01718,
+      "nodata": -32768,
+      "nb_points": 1073462,
+      "nb_valid_points": 858954
+    }
+  },
+  "coregistration_results": {
+    "dx": {
+      "total_offset": -2.7509,
+      "unit_offset": "px",
+      "total_bias_value": -1.37545,
+      "unit_bias_value": "m",
+      "nuth_offset": -2.7509
+    },
+    "dy": {
+      "total_offset": -4.24767,
+      "unit_offset": "px",
+      "total_bias_value": -2.12383,
+      "unit_bias_value": "m",
+      "nuth_offset": -4.24767
+    },
+    "gdal_translate_bounds": {
+      "ulx": 315145.12455,
+      "uly": 4162056.12383,
+      "lrx": 315684.12455,
+      "lry": 4161547.12383
+    }
+  }
+}

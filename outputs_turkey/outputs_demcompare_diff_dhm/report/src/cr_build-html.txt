@@ -1,0 +1,45 @@
+sphinx-build -b html -d build/doctrees   source build/html
+Sphinx v5.3.0 en cours d'exécution
+Création du répertoire de sortie... fait
+Construction en cours [mo] : cibles périmées pour les fichiers po 0
+Construction [html] : cibles périmées pour les fichiers sources 1
+Mise à jour de l'environnement : [nouvelle configuration] 1 ajouté(s), 0 modifié(s), 0 supprimé(s)
+Lecture des sources... [100%] index
+
+/home/duboise/work/src/discover-cnes-3d-tools/data_turkey/outputs_demcompare_diff_dhm/report/src/source/index.rst:17: WARNING: Title underline too short.
+
+**Initial elevation (REF-SEC)**
+----------------------
+/home/duboise/work/src/discover-cnes-3d-tools/data_turkey/outputs_demcompare_diff_dhm/report/src/source/index.rst:33: WARNING: Title underline too short.
+
+**Final elevation after coregistration (COREG_REF-COREG_SEC)**
+-----------------------------------------
+/home/duboise/work/src/discover-cnes-3d-tools/data_turkey/outputs_demcompare_diff_dhm/report/src/source/index.rst:33: WARNING: Title underline too short.
+
+**Final elevation after coregistration (COREG_REF-COREG_SEC)**
+-----------------------------------------
+/home/duboise/work/src/discover-cnes-3d-tools/data_turkey/outputs_demcompare_diff_dhm/report/src/source/index.rst:83: WARNING: Duplicate explicit target name: "standard".
+Recherche des fichiers périmés... aucun résultat
+Environnement de sérialisation... fait
+Vérification de la cohérence... fait
+Document en préparation... fait
+Écriture... [100%] index
+
+Génération des index... genindex fait
+Écriture des pages additionnelles... search fait
+Copie des images... [ 16%] /home/duboise/work/src/discover-cnes-3d-tools/data_turkey/outputs_demcompare_diff_dhm/initial_dem_diff_snapshot.png
+Copie des images... [ 33%] /home/duboise/work/src/discover-cnes-3d-tools/data_turkey/outputs_demcompare_diff_dhm/stats/initial_dem_diff_pdf.png
+Copie des images... [ 50%] /home/duboise/work/src/discover-cnes-3d-tools/data_turkey/outputs_demcompare_diff_dhm/stats/initial_dem_diff_cdf.png
+Copie des images... [ 66%] /home/duboise/work/src/discover-cnes-3d-tools/data_turkey/outputs_demcompare_diff_dhm/final_dem_diff_snapshot.png
+Copie des images... [ 83%] /home/duboise/work/src/discover-cnes-3d-tools/data_turkey/outputs_demcompare_diff_dhm/stats/final_dem_diff_pdf.png
+Copie des images... [100%] /home/duboise/work/src/discover-cnes-3d-tools/data_turkey/outputs_demcompare_diff_dhm/stats/final_dem_diff_cdf.png
+
+Copie des fichiers statiques... fait
+Copie des fichiers complémentaires... fait
+Export de l'index de recherche en English (code: en)... fait
+Export de l'inventaire des objets... fait
+La compilation a réussi, 4 avertissements.
+
+Les pages HTML sont dans build/html.
+
+Build finished. The HTML pages are in build/html.

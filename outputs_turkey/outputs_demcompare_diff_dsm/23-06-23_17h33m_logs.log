@@ -1,0 +1,18 @@
+*** Demcompare ***
+Output directory: /home/duboise/work/src/discover-cnes-3d-tools/data_turkey/outputs_demcompare_diff_dsm
+Input Reference DEM (REF): /home/duboise/work/src/discover-cnes-3d-tools/data_turkey/outputs_cars_post_event/cars_dsm_post_event.tif
+Input Secondary DEM (SEC): /home/duboise/work/src/discover-cnes-3d-tools/data_turkey/outputs_cars_pre_event/cars_dsm_pre_event.tif
+[Coregistration]
+Coregistration method name: nuth_kaab_internal
+Coregistration results:
+Planimetry 2D shift between reprojected SEC and REF:
+ -> row : -2.74441 m
+ -> col : -1.47906 m
+GDAL translate bounds:
+ -> ulx : 315145.02 , -> uly : 4162056.74 , -> lrx : 315684.02 , -> lry : 4161547.74 
+Altimetry shift between reprojected SEC and REF (not applied):
+ -> alti : 1719.8384741545992 m
+[Stats]
+(COREG_REF-COREG_SEC) altimetric stats generation
+[Report]
+Generated report: /home/duboise/work/src/discover-cnes-3d-tools/data_turkey/outputs_demcompare_diff_dsm/./report/published_report

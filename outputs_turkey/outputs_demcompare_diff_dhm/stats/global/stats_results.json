@@ -1,0 +1,17 @@
+{
+    "0": {
+        "Set Name": "global:[1]",
+        "nbpts": 858954,
+        "percent_valid_points": 80.01718,
+        "mean": 0.37567,
+        "median": 0.38453,
+        "max": 19.75639,
+        "min": -18.57039,
+        "sum": 311684.53125,
+        "percentil_90": 7.90603,
+        "squared_sum": 12267602.0,
+        "nmad": 1.58004,
+        "rmse": 3.84525,
+        "std": 3.82686
+    }
+}

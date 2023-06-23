@@ -1,0 +1,16 @@
+\babel@toc {english}{}\relax 
+\contentsline {section}{\numberline {1}Image views}{1}{section.1}%
+\contentsline {subsection}{\numberline {1.1}\sphinxstylestrong {Initial elevation (REF\sphinxhyphen {}SEC)}}{1}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}\sphinxstylestrong {Final elevation after coregistration (COREG\_REF\sphinxhyphen {}COREG\_SEC)}}{2}{subsection.1.2}%
+\contentsline {section}{\numberline {2}Stats Results}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Classification layer: global}{2}{subsection.2.1}%
+\contentsline {subsubsection}{Mode: standard}{2}{subsubsection*.2}%
+\contentsline {paragraph}{Table showing comparison metrics}{2}{paragraph*.3}%
+\contentsline {subsection}{\numberline {2.2}Classification layer: Slope0}{2}{subsection.2.2}%
+\contentsline {subsubsection}{Mode: standard}{2}{subsubsection*.4}%
+\contentsline {paragraph}{Table showing comparison metrics}{3}{paragraph*.5}%
+\contentsline {subsubsection}{Mode: intersection}{3}{subsubsection*.6}%
+\contentsline {paragraph}{Table showing comparison metrics}{3}{paragraph*.7}%
+\contentsline {subsubsection}{Mode: exclusion}{3}{subsubsection*.8}%
+\contentsline {paragraph}{Table showing comparison metrics}{3}{paragraph*.9}%
+\contentsline {section}{\numberline {3}Full input configuration}{4}{section.3}%

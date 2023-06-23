@@ -1,0 +1,2906 @@
+sphinx-build -b latex -d build/doctrees   source build/latex
+Sphinx v5.3.0 en cours d'exécution
+Création du répertoire de sortie... fait
+Chargement de l'environnement pickled... fait
+Construction en cours [mo] : cibles périmées pour les fichiers po 0
+Construction [latex] : all documents
+Mise à jour de l'environnement : 0 ajouté(s), 0 modifié(s), 0 supprimé(s)
+Recherche des fichiers périmés... aucun résultat
+Traitement de index.tex en cours... index 
+résolution des références...
+fait
+Enregistrement... fait
+Copie des images... [ 16%] /home/duboise/work/src/discover-cnes-3d-tools/data_turkey/outputs_demcompare_diff_dsm/initial_dem_diff_snapshot.png
+Copie des images... [ 33%] /home/duboise/work/src/discover-cnes-3d-tools/data_turkey/outputs_demcompare_diff_dsm/stats/initial_dem_diff_pdf.png
+Copie des images... [ 50%] /home/duboise/work/src/discover-cnes-3d-tools/data_turkey/outputs_demcompare_diff_dsm/stats/initial_dem_diff_cdf.png
+Copie des images... [ 66%] /home/duboise/work/src/discover-cnes-3d-tools/data_turkey/outputs_demcompare_diff_dsm/final_dem_diff_snapshot.png
+Copie des images... [ 83%] /home/duboise/work/src/discover-cnes-3d-tools/data_turkey/outputs_demcompare_diff_dsm/stats/final_dem_diff_pdf.png
+Copie des images... [100%] /home/duboise/work/src/discover-cnes-3d-tools/data_turkey/outputs_demcompare_diff_dsm/stats/final_dem_diff_cdf.png
+
+Copie des fichiers de support TeX... Copie des fichiers de support TeX...
+fait
+La compilation a réussi.
+
+Les fichiers LaTex se trouvent dans build/latex.
+Exécuter 'make' dans ce répertoire pour les soumettre à (pdf)latex
+(ou 'make latexpdf' directement ici pour l’automatiser).
+Running LaTeX files through pdflatex...
+make -C build/latex all-pdf
+make[1] : on entre dans le répertoire « /home/duboise/work/src/discover-cnes-3d-tools/data_turkey/outputs_demcompare_diff_dsm/report/src/build/latex »
+latexmk -pdf -dvi- -ps-  'index.tex'
+Rc files read:
+  /etc/LatexMk
+  latexmkrc
+Latexmk: This is Latexmk, John Collins, 20 November 2021, version: 4.76.
+Rule 'pdflatex': File changes, etc:
+   Changed files, or newly in use since previous run(s):
+      'index.tex'
+------------
+Run number 1 of rule 'pdflatex'
+------------
+------------
+Running 'pdflatex   -recorder  "index.tex"'
+------------
+Latexmk: applying rule 'pdflatex'...
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(./index.tex
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-01-21> (./sphinxhowto.cls
+Document Class: sphinxhowto 2019/12/01 v2.3.0 Document class (Sphinx howto)
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo)))
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/cmap/cmap.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty<<t1.cmap>>)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+(/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
+(/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf))
+(/usr/share/texmf/tex/latex/tex-gyre/tgtermes.sty
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty)))
+(/usr/share/texmf/tex/latex/tex-gyre/tgheros.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/fncychap/fncychap.sty) (./sphinx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def))
+(./sphinxoptionshyperref.sty) (./sphinxoptionsgeometry.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/wrapfig/wrapfig.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/capt-of/capt-of.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)))
+(./sphinxlatexgraphics.sty) (./sphinxpackageboxes.sty)
+(./sphinxlatexadmonitions.sty
+(/usr/share/texlive/texmf-dist/tex/latex/framed/framed.sty))
+(./sphinxlatexliterals.sty
+(/usr/share/texlive/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/base/alltt.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/upquote/upquote.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/needspace/needspace.sty))
+(./sphinxlatexshadowbox.sty) (./sphinxlatexcontainers.sty)
+(./sphinxhighlight.sty) (./sphinxlatextables.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tabulary/tabulary.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty))
+(./sphinxlatexnumfig.sty) (./sphinxlatexlists.sty) (./sphinxpackagefootnote.sty
+) (./sphinxlatexindbibtoc.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/makeidx.sty))
+(./sphinxlatexstylepage.sty
+(/usr/share/texlive/texmf-dist/tex/latex/parskip/parskip.sty
+(/usr/share/texlive/texmf-dist/tex/latex/parskip/parskip-2001-04-09.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty))
+(./sphinxlatexstyleheadings.sty
+(/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty))
+(./sphinxlatexstyletext.sty) (./sphinxlatexobjects.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty))
+(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref-langpatches.def)
+(/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def)
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+(/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+(/usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+(/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/hypcap.sty)
+(./sphinxmessages.sty)
+Writing index file index.idx
+(/usr/share/texmf/tex/latex/tex-gyre/t1qtm.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def)
+(./index.aux)
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty))
+(/usr/share/texmf/tex/latex/tex-gyre/t1qhv.fd)<<ot1.cmap>><<oml.cmap>><<oms.cma
+p>><<omx.cmap>> (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
+(/usr/share/texmf/tex/latex/tex-gyre/ts1qtm.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/txfonts/t1txtt.fd) [1{/var/lib/texmf/f
+onts/map/pdftex/updmap/pdftex.map} <./initial_dem_diff_snapshot.png> <./initial
+_dem_diff_pdf.png> <./initial_dem_diff_cdf.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 295--295
+[]\T1/qtm/m/n/10 Set
+
+Underfull \hbox (badness 10000) in paragraph at lines 295--295
+[]\T1/qtm/m/n/10 per-
+
+Overfull \hbox (18.82095pt too wide) in paragraph at lines 295--295
+\T1/qtm/m/n/10 cent_valid_points| 
+
+Overfull \hbox (6.66367pt too wide) in paragraph at lines 295--295
+[]\T1/qtm/m/n/10 mean| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 295--295
+[]\T1/qtm/m/n/10 me-
+
+Overfull \hbox (2.22366pt too wide) in paragraph at lines 295--295
+[]\T1/qtm/m/n/10 max| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 295--295
+[]\T1/qtm/m/n/10 per-
+
+Overfull \hbox (6.11356pt too wide) in paragraph at lines 295--295
+\T1/qtm/m/n/10 centil_90| 
+
+Overfull \hbox (19.89592pt too wide) in paragraph at lines 295--295
+[]\T1/qtm/m/n/10 squared_sum| 
+
+Overfull \hbox (7.22366pt too wide) in paragraph at lines 295--295
+[]\T1/qtm/m/n/10 nmad| 
+
+Overfull \hbox (4.64365pt too wide) in paragraph at lines 295--295
+[]\T1/qtm/m/n/10 rmse| 
+
+Overfull \hbox (14.64943pt too wide) in paragraph at lines 295--295
+[]\T1/qtm/m/n/10 global:[1]| 
+
+Overfull \hbox (16.05423pt too wide) in paragraph at lines 295--295
+[]\T1/qtm/m/n/10 861021.00| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 295--295
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 295--295
+\T1/qtm/m/n/10 6.78| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 295--295
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.50366pt too wide) in paragraph at lines 295--295
+[]\T1/qtm/m/n/10 12.90| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 295--295
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (6.4272pt too wide) in paragraph at lines 295--295
+\T1/qtm/m/n/10 25.96| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 295--295
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (15.87086pt too wide) in paragraph at lines 295--295
+\T1/qtm/m/n/10 5638297.00| 
+
+Overfull \hbox (19.72592pt too wide) in paragraph at lines 295--295
+[]\T1/qtm/m/n/10 50796252.00| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 295--295
+[]\T1/qtm/m/n/10 1.59| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 295--295
+[]\T1/qtm/m/n/10 7.82| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 295--295
+[]\T1/qtm/m/n/10 3.89| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 Set
+
+Overfull \hbox (6.66367pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 mean| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 me-
+
+Overfull \hbox (2.22366pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 max| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 per-
+
+Overfull \hbox (7.64752pt too wide) in paragraph at lines 555--555
+\T1/qtm/m/n/10 centil_90| 
+
+Overfull \hbox (21.51212pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 squared_sum| 
+
+Overfull \hbox (7.22366pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 nmad| 
+
+Overfull \hbox (4.64365pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 rmse| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 per-
+
+Overfull \hbox (21.38718pt too wide) in paragraph at lines 555--555
+\T1/qtm/m/n/10 cent_valid_points| 
+
+Overfull \hbox (8.81186pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 [0%;5%[:0| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 555--555
+\T1/qtm/m/n/10 7.02| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 9.37| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.2198pt too wide) in paragraph at lines 555--555
+\T1/qtm/m/n/10 19.11| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (2.4306pt too wide) in paragraph at lines 555--555
+\T1/qtm/m/n/10 1094.53| 
+
+Overfull \hbox (1.34212pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 9187.03| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 0.78| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 7.67| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 3.11| 
+
+Overfull \hbox (2.35837pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 160.00| 
+
+Overfull \hbox (13.81186pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 [5%;10%[:5| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 555--555
+\T1/qtm/m/n/10 6.82| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.50366pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 10.79| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.2198pt too wide) in paragraph at lines 555--555
+\T1/qtm/m/n/10 25.70| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (2.4306pt too wide) in paragraph at lines 555--555
+\T1/qtm/m/n/10 8008.12| 
+
+Overfull \hbox (6.34212pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 61546.67| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 0.68| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 7.24| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 2.44| 
+
+Overfull \hbox (7.35837pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 1224.00| 
+
+Overfull \hbox (23.81186pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 [10%;25%[:10| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 555--555
+\T1/qtm/m/n/10 6.79| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.50366pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 12.81| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.2198pt too wide) in paragraph at lines 555--555
+\T1/qtm/m/n/10 25.96| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (12.4306pt too wide) in paragraph at lines 555--555
+\T1/qtm/m/n/10 202324.12| 
+
+Overfull \hbox (16.34212pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 1562551.62| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 0.80| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 7.24| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 2.52| 
+
+Overfull \hbox (12.35837pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 30884.00| 
+
+Overfull \hbox (23.81186pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 [25%;45%[:25| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 555--555
+\T1/qtm/m/n/10 6.82| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.50366pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 12.87| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.2198pt too wide) in paragraph at lines 555--555
+\T1/qtm/m/n/10 25.96| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (12.4306pt too wide) in paragraph at lines 555--555
+\T1/qtm/m/n/10 370023.06| 
+
+Overfull \hbox (16.34212pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 2935363.50| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 1.02| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 7.35| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 2.76| 
+
+Overfull \hbox (12.35837pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 56083.00| 
+
+Overfull \hbox (16.59186pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 [45%;inf[:45| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 555--555
+\T1/qtm/m/n/10 6.51| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.50366pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 12.90| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.2198pt too wide) in paragraph at lines 555--555
+\T1/qtm/m/n/10 25.96| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (17.4306pt too wide) in paragraph at lines 555--555
+\T1/qtm/m/n/10 1416136.62| 
+
+Overfull \hbox (21.34212pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 12780142.00| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 2.20| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 7.66| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 4.05| 
+
+Overfull \hbox (17.35837pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 222285.00| 
+[2 <./final_dem_diff_snapshot.png> <./final_dem_diff_pdf.png> <./final_dem_diff
+_cdf.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 Set
+
+Overfull \hbox (6.66367pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 mean| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 me-
+
+Overfull \hbox (2.22366pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 max| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 per-
+
+Overfull \hbox (7.64752pt too wide) in paragraph at lines 812--812
+\T1/qtm/m/n/10 centil_90| 
+
+Overfull \hbox (21.51212pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 squared_sum| 
+
+Overfull \hbox (7.22366pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 nmad| 
+
+Overfull \hbox (4.64365pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 rmse| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 per-
+
+Overfull \hbox (21.38718pt too wide) in paragraph at lines 812--812
+\T1/qtm/m/n/10 cent_valid_points| 
+
+Overfull \hbox (8.81186pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 [0%;5%[:0| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 812--812
+\T1/qtm/m/n/10 7.02| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 9.37| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.2198pt too wide) in paragraph at lines 812--812
+\T1/qtm/m/n/10 19.11| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (2.4306pt too wide) in paragraph at lines 812--812
+\T1/qtm/m/n/10 1094.53| 
+
+Overfull \hbox (1.34212pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 9187.03| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 0.78| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 7.67| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 3.11| 
+
+Overfull \hbox (2.35837pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 160.00| 
+
+Overfull \hbox (13.81186pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 [5%;10%[:5| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 812--812
+\T1/qtm/m/n/10 6.82| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.50366pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 10.79| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.2198pt too wide) in paragraph at lines 812--812
+\T1/qtm/m/n/10 25.70| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (2.4306pt too wide) in paragraph at lines 812--812
+\T1/qtm/m/n/10 8008.12| 
+
+Overfull \hbox (6.34212pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 61546.67| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 0.68| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 7.24| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 2.44| 
+
+Overfull \hbox (7.35837pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 1224.00| 
+
+Overfull \hbox (23.81186pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 [10%;25%[:10| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 812--812
+\T1/qtm/m/n/10 6.79| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.50366pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 12.81| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.2198pt too wide) in paragraph at lines 812--812
+\T1/qtm/m/n/10 25.96| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (12.4306pt too wide) in paragraph at lines 812--812
+\T1/qtm/m/n/10 202324.12| 
+
+Overfull \hbox (16.34212pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 1562551.62| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 0.80| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 7.24| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 2.52| 
+
+Overfull \hbox (12.35837pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 30884.00| 
+
+Overfull \hbox (23.81186pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 [25%;45%[:25| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 812--812
+\T1/qtm/m/n/10 6.82| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.50366pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 12.87| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.2198pt too wide) in paragraph at lines 812--812
+\T1/qtm/m/n/10 25.96| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (12.4306pt too wide) in paragraph at lines 812--812
+\T1/qtm/m/n/10 370023.06| 
+
+Overfull \hbox (16.34212pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 2935363.50| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 1.02| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 7.35| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 2.76| 
+
+Overfull \hbox (12.35837pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 56083.00| 
+
+Overfull \hbox (16.59186pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 [45%;inf[:45| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 812--812
+\T1/qtm/m/n/10 6.51| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.50366pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 12.90| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.2198pt too wide) in paragraph at lines 812--812
+\T1/qtm/m/n/10 25.96| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (17.4306pt too wide) in paragraph at lines 812--812
+\T1/qtm/m/n/10 1416136.62| 
+
+Overfull \hbox (21.34212pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 12780142.00| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 2.20| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 7.66| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 4.05| 
+
+Overfull \hbox (17.35837pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 222285.00| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 Set
+
+Overfull \hbox (6.66367pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 mean| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 me-
+
+Overfull \hbox (2.22366pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 max| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 per-
+
+Overfull \hbox (7.64752pt too wide) in paragraph at lines 1069--1069
+\T1/qtm/m/n/10 centil_90| 
+
+Overfull \hbox (21.51212pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 squared_sum| 
+
+Overfull \hbox (7.22366pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 nmad| 
+
+Overfull \hbox (4.64365pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 rmse| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 per-
+
+Overfull \hbox (21.38718pt too wide) in paragraph at lines 1069--1069
+\T1/qtm/m/n/10 cent_valid_points| 
+
+Overfull \hbox (8.81186pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 [0%;5%[:0| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 1069--1069
+\T1/qtm/m/n/10 7.55| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.50366pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 11.96| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.2198pt too wide) in paragraph at lines 1069--1069
+\T1/qtm/m/n/10 25.89| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.4306pt too wide) in paragraph at lines 1069--1069
+\T1/qtm/m/n/10 63142.47| 
+
+Overfull \hbox (11.34212pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 591026.75| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 1.22| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 8.41| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 3.70| 
+
+Overfull \hbox (7.35837pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 8669.00| 
+
+Overfull \hbox (13.81186pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 [5%;10%[:5| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 1069--1069
+\T1/qtm/m/n/10 7.55| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.50366pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 12.29| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.2198pt too wide) in paragraph at lines 1069--1069
+\T1/qtm/m/n/10 25.87| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (12.4306pt too wide) in paragraph at lines 1069--1069
+\T1/qtm/m/n/10 174409.78| 
+
+Overfull \hbox (16.34212pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 1610734.50| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 1.17| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 8.35| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 3.57| 
+
+Overfull \hbox (12.35837pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 23948.00| 
+
+Overfull \hbox (23.81186pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 [10%;25%[:10| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 1069--1069
+\T1/qtm/m/n/10 7.63| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.50366pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 12.88| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.2198pt too wide) in paragraph at lines 1069--1069
+\T1/qtm/m/n/10 25.95| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (12.4306pt too wide) in paragraph at lines 1069--1069
+\T1/qtm/m/n/10 785172.06| 
+
+Overfull \hbox (16.34212pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 7414507.00| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 1.34| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 8.49| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 3.72| 
+
+Overfull \hbox (17.35837pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 106965.00| 
+
+Overfull \hbox (23.81186pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 [25%;45%[:25| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 1069--1069
+\T1/qtm/m/n/10 7.37| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.50366pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 12.90| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.2198pt too wide) in paragraph at lines 1069--1069
+\T1/qtm/m/n/10 25.96| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (17.4306pt too wide) in paragraph at lines 1069--1069
+\T1/qtm/m/n/10 1072950.88| 
+
+Overfull \hbox (16.34212pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 9864000.00| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 1.40| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 8.23| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 3.66| 
+
+Overfull \hbox (17.35837pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 150482.00| 
+
+Overfull \hbox (16.59186pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 [45%;inf[:45| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 1069--1069
+\T1/qtm/m/n/10 6.29| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.50366pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 12.90| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.2198pt too wide) in paragraph at lines 1069--1069
+\T1/qtm/m/n/10 25.96| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (17.4306pt too wide) in paragraph at lines 1069--1069
+\T1/qtm/m/n/10 1146740.38| 
+
+Overfull \hbox (16.34212pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 9914919.00| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 1.59| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 7.37| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 3.85| 
+
+Overfull \hbox (17.35837pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 190867.00| 
+[3]
+No file index.ind.
+[4] (./index.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `index.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+ )
+(see the transcript file for additional information){/usr/share/texmf/fonts/enc
+/dvips/tex-gyre/q-ec.enc}{/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ts1.enc}<
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/tex
+mf/fonts/type1/public/tex-gyre/qhvb.pfb></usr/share/texmf/fonts/type1/public/te
+x-gyre/qtmb.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qtmr.pfb></usr/sh
+are/texmf/fonts/type1/public/tex-gyre/qtmri.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/txfonts/t1xbtt.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/txfonts/t1xtt.pfb>
+Output written on index.pdf (4 pages, 500272 bytes).
+Transcript written on index.log.
+Latexmk: Index file 'index.idx' was written
+Latexmk: Missing input file 'index.ind' (or dependence on it) from following:
+  'No file index.ind.'
+Latexmk: References changed.
+Latexmk: References changed.
+Latexmk: Log file says output to 'index.pdf'
+Rule 'makeindex index.idx': File changes, etc:
+   Changed files, or newly in use since previous run(s):
+      'index.idx'
+------------
+Run number 1 of rule 'makeindex index.idx'
+------------
+------------
+Running 'makeindex -s python.ist  -o "index.ind" "index.idx"'
+------------
+Latexmk: Examining 'index.log'
+=== TeX engine is 'pdfTeX'
+Latexmk: applying rule 'makeindex index.idx'...
+This is makeindex, version 2.15 [TeX Live 2022/dev] (kpathsea + Thai support).
+Scanning style file ./python.ist.......done (7 attributes redefined, 0 ignored).
+Scanning input file index.idx...done (0 entries accepted, 0 rejected).
+Nothing written in index.ind.
+Transcript written in index.ilg.
+Rule 'pdflatex': File changes, etc:
+   Changed files, or newly in use since previous run(s):
+      'index.aux'
+      'index.ind'
+      'index.out'
+------------
+Run number 2 of rule 'pdflatex'
+------------
+------------
+Running 'pdflatex   -recorder  "index.tex"'
+------------
+Latexmk: applying rule 'pdflatex'...
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(./index.tex
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-01-21> (./sphinxhowto.cls
+Document Class: sphinxhowto 2019/12/01 v2.3.0 Document class (Sphinx howto)
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo)))
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/cmap/cmap.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty<<t1.cmap>>)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+(/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
+(/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf))
+(/usr/share/texmf/tex/latex/tex-gyre/tgtermes.sty
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty)))
+(/usr/share/texmf/tex/latex/tex-gyre/tgheros.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/fncychap/fncychap.sty) (./sphinx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def))
+(./sphinxoptionshyperref.sty) (./sphinxoptionsgeometry.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/wrapfig/wrapfig.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/capt-of/capt-of.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)))
+(./sphinxlatexgraphics.sty) (./sphinxpackageboxes.sty)
+(./sphinxlatexadmonitions.sty
+(/usr/share/texlive/texmf-dist/tex/latex/framed/framed.sty))
+(./sphinxlatexliterals.sty
+(/usr/share/texlive/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/base/alltt.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/upquote/upquote.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/needspace/needspace.sty))
+(./sphinxlatexshadowbox.sty) (./sphinxlatexcontainers.sty)
+(./sphinxhighlight.sty) (./sphinxlatextables.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tabulary/tabulary.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty))
+(./sphinxlatexnumfig.sty) (./sphinxlatexlists.sty) (./sphinxpackagefootnote.sty
+) (./sphinxlatexindbibtoc.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/makeidx.sty))
+(./sphinxlatexstylepage.sty
+(/usr/share/texlive/texmf-dist/tex/latex/parskip/parskip.sty
+(/usr/share/texlive/texmf-dist/tex/latex/parskip/parskip-2001-04-09.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty))
+(./sphinxlatexstyleheadings.sty
+(/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty))
+(./sphinxlatexstyletext.sty) (./sphinxlatexobjects.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty))
+(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref-langpatches.def)
+(/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def)
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+(/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+(/usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+(/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/hypcap.sty)
+(./sphinxmessages.sty)
+Writing index file index.idx
+(/usr/share/texmf/tex/latex/tex-gyre/t1qtm.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def)
+(./index.aux)
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty))
+(./index.out) (./index.out) (/usr/share/texmf/tex/latex/tex-gyre/t1qhv.fd)<<ot1
+.cmap>><<oml.cmap>><<oms.cmap>><<omx.cmap>>
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd) (./index.toc)
+(/usr/share/texmf/tex/latex/tex-gyre/ts1qtm.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/txfonts/t1txtt.fd) [1{/var/lib/texmf/f
+onts/map/pdftex/updmap/pdftex.map} <./initial_dem_diff_snapshot.png> <./initial
+_dem_diff_pdf.png> <./initial_dem_diff_cdf.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 295--295
+[]\T1/qtm/m/n/10 Set
+
+Underfull \hbox (badness 10000) in paragraph at lines 295--295
+[]\T1/qtm/m/n/10 per-
+
+Overfull \hbox (18.82095pt too wide) in paragraph at lines 295--295
+\T1/qtm/m/n/10 cent_valid_points| 
+
+Overfull \hbox (6.66367pt too wide) in paragraph at lines 295--295
+[]\T1/qtm/m/n/10 mean| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 295--295
+[]\T1/qtm/m/n/10 me-
+
+Overfull \hbox (2.22366pt too wide) in paragraph at lines 295--295
+[]\T1/qtm/m/n/10 max| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 295--295
+[]\T1/qtm/m/n/10 per-
+
+Overfull \hbox (6.11356pt too wide) in paragraph at lines 295--295
+\T1/qtm/m/n/10 centil_90| 
+
+Overfull \hbox (19.89592pt too wide) in paragraph at lines 295--295
+[]\T1/qtm/m/n/10 squared_sum| 
+
+Overfull \hbox (7.22366pt too wide) in paragraph at lines 295--295
+[]\T1/qtm/m/n/10 nmad| 
+
+Overfull \hbox (4.64365pt too wide) in paragraph at lines 295--295
+[]\T1/qtm/m/n/10 rmse| 
+
+Overfull \hbox (14.64943pt too wide) in paragraph at lines 295--295
+[]\T1/qtm/m/n/10 global:[1]| 
+
+Overfull \hbox (16.05423pt too wide) in paragraph at lines 295--295
+[]\T1/qtm/m/n/10 861021.00| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 295--295
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 295--295
+\T1/qtm/m/n/10 6.78| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 295--295
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.50366pt too wide) in paragraph at lines 295--295
+[]\T1/qtm/m/n/10 12.90| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 295--295
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (6.4272pt too wide) in paragraph at lines 295--295
+\T1/qtm/m/n/10 25.96| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 295--295
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (15.87086pt too wide) in paragraph at lines 295--295
+\T1/qtm/m/n/10 5638297.00| 
+
+Overfull \hbox (19.72592pt too wide) in paragraph at lines 295--295
+[]\T1/qtm/m/n/10 50796252.00| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 295--295
+[]\T1/qtm/m/n/10 1.59| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 295--295
+[]\T1/qtm/m/n/10 7.82| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 295--295
+[]\T1/qtm/m/n/10 3.89| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 Set
+
+Overfull \hbox (6.66367pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 mean| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 me-
+
+Overfull \hbox (2.22366pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 max| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 per-
+
+Overfull \hbox (7.64752pt too wide) in paragraph at lines 555--555
+\T1/qtm/m/n/10 centil_90| 
+
+Overfull \hbox (21.51212pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 squared_sum| 
+
+Overfull \hbox (7.22366pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 nmad| 
+
+Overfull \hbox (4.64365pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 rmse| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 per-
+
+Overfull \hbox (21.38718pt too wide) in paragraph at lines 555--555
+\T1/qtm/m/n/10 cent_valid_points| 
+
+Overfull \hbox (8.81186pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 [0%;5%[:0| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 555--555
+\T1/qtm/m/n/10 7.02| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 9.37| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.2198pt too wide) in paragraph at lines 555--555
+\T1/qtm/m/n/10 19.11| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (2.4306pt too wide) in paragraph at lines 555--555
+\T1/qtm/m/n/10 1094.53| 
+
+Overfull \hbox (1.34212pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 9187.03| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 0.78| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 7.67| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 3.11| 
+
+Overfull \hbox (2.35837pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 160.00| 
+
+Overfull \hbox (13.81186pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 [5%;10%[:5| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 555--555
+\T1/qtm/m/n/10 6.82| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.50366pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 10.79| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.2198pt too wide) in paragraph at lines 555--555
+\T1/qtm/m/n/10 25.70| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (2.4306pt too wide) in paragraph at lines 555--555
+\T1/qtm/m/n/10 8008.12| 
+
+Overfull \hbox (6.34212pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 61546.67| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 0.68| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 7.24| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 2.44| 
+
+Overfull \hbox (7.35837pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 1224.00| 
+
+Overfull \hbox (23.81186pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 [10%;25%[:10| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 555--555
+\T1/qtm/m/n/10 6.79| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.50366pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 12.81| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.2198pt too wide) in paragraph at lines 555--555
+\T1/qtm/m/n/10 25.96| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (12.4306pt too wide) in paragraph at lines 555--555
+\T1/qtm/m/n/10 202324.12| 
+
+Overfull \hbox (16.34212pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 1562551.62| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 0.80| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 7.24| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 2.52| 
+
+Overfull \hbox (12.35837pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 30884.00| 
+
+Overfull \hbox (23.81186pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 [25%;45%[:25| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 555--555
+\T1/qtm/m/n/10 6.82| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.50366pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 12.87| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.2198pt too wide) in paragraph at lines 555--555
+\T1/qtm/m/n/10 25.96| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (12.4306pt too wide) in paragraph at lines 555--555
+\T1/qtm/m/n/10 370023.06| 
+
+Overfull \hbox (16.34212pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 2935363.50| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 1.02| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 7.35| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 2.76| 
+
+Overfull \hbox (12.35837pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 56083.00| 
+
+Overfull \hbox (16.59186pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 [45%;inf[:45| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 555--555
+\T1/qtm/m/n/10 6.51| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.50366pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 12.90| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.2198pt too wide) in paragraph at lines 555--555
+\T1/qtm/m/n/10 25.96| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (17.4306pt too wide) in paragraph at lines 555--555
+\T1/qtm/m/n/10 1416136.62| 
+
+Overfull \hbox (21.34212pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 12780142.00| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 2.20| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 7.66| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 4.05| 
+
+Overfull \hbox (17.35837pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 222285.00| 
+[2 <./final_dem_diff_snapshot.png> <./final_dem_diff_pdf.png> <./final_dem_diff
+_cdf.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 Set
+
+Overfull \hbox (6.66367pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 mean| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 me-
+
+Overfull \hbox (2.22366pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 max| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 per-
+
+Overfull \hbox (7.64752pt too wide) in paragraph at lines 812--812
+\T1/qtm/m/n/10 centil_90| 
+
+Overfull \hbox (21.51212pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 squared_sum| 
+
+Overfull \hbox (7.22366pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 nmad| 
+
+Overfull \hbox (4.64365pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 rmse| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 per-
+
+Overfull \hbox (21.38718pt too wide) in paragraph at lines 812--812
+\T1/qtm/m/n/10 cent_valid_points| 
+
+Overfull \hbox (8.81186pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 [0%;5%[:0| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 812--812
+\T1/qtm/m/n/10 7.02| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 9.37| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.2198pt too wide) in paragraph at lines 812--812
+\T1/qtm/m/n/10 19.11| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (2.4306pt too wide) in paragraph at lines 812--812
+\T1/qtm/m/n/10 1094.53| 
+
+Overfull \hbox (1.34212pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 9187.03| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 0.78| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 7.67| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 3.11| 
+
+Overfull \hbox (2.35837pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 160.00| 
+
+Overfull \hbox (13.81186pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 [5%;10%[:5| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 812--812
+\T1/qtm/m/n/10 6.82| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.50366pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 10.79| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.2198pt too wide) in paragraph at lines 812--812
+\T1/qtm/m/n/10 25.70| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (2.4306pt too wide) in paragraph at lines 812--812
+\T1/qtm/m/n/10 8008.12| 
+
+Overfull \hbox (6.34212pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 61546.67| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 0.68| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 7.24| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 2.44| 
+
+Overfull \hbox (7.35837pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 1224.00| 
+
+Overfull \hbox (23.81186pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 [10%;25%[:10| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 812--812
+\T1/qtm/m/n/10 6.79| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.50366pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 12.81| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.2198pt too wide) in paragraph at lines 812--812
+\T1/qtm/m/n/10 25.96| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (12.4306pt too wide) in paragraph at lines 812--812
+\T1/qtm/m/n/10 202324.12| 
+
+Overfull \hbox (16.34212pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 1562551.62| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 0.80| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 7.24| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 2.52| 
+
+Overfull \hbox (12.35837pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 30884.00| 
+
+Overfull \hbox (23.81186pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 [25%;45%[:25| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 812--812
+\T1/qtm/m/n/10 6.82| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.50366pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 12.87| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.2198pt too wide) in paragraph at lines 812--812
+\T1/qtm/m/n/10 25.96| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (12.4306pt too wide) in paragraph at lines 812--812
+\T1/qtm/m/n/10 370023.06| 
+
+Overfull \hbox (16.34212pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 2935363.50| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 1.02| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 7.35| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 2.76| 
+
+Overfull \hbox (12.35837pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 56083.00| 
+
+Overfull \hbox (16.59186pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 [45%;inf[:45| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 812--812
+\T1/qtm/m/n/10 6.51| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.50366pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 12.90| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.2198pt too wide) in paragraph at lines 812--812
+\T1/qtm/m/n/10 25.96| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (17.4306pt too wide) in paragraph at lines 812--812
+\T1/qtm/m/n/10 1416136.62| 
+
+Overfull \hbox (21.34212pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 12780142.00| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 2.20| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 7.66| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 4.05| 
+
+Overfull \hbox (17.35837pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 222285.00| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 Set
+
+Overfull \hbox (6.66367pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 mean| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 me-
+
+Overfull \hbox (2.22366pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 max| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 per-
+
+Overfull \hbox (7.64752pt too wide) in paragraph at lines 1069--1069
+\T1/qtm/m/n/10 centil_90| 
+
+Overfull \hbox (21.51212pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 squared_sum| 
+
+Overfull \hbox (7.22366pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 nmad| 
+
+Overfull \hbox (4.64365pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 rmse| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 per-
+
+Overfull \hbox (21.38718pt too wide) in paragraph at lines 1069--1069
+\T1/qtm/m/n/10 cent_valid_points| 
+
+Overfull \hbox (8.81186pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 [0%;5%[:0| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 1069--1069
+\T1/qtm/m/n/10 7.55| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.50366pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 11.96| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.2198pt too wide) in paragraph at lines 1069--1069
+\T1/qtm/m/n/10 25.89| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.4306pt too wide) in paragraph at lines 1069--1069
+\T1/qtm/m/n/10 63142.47| 
+
+Overfull \hbox (11.34212pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 591026.75| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 1.22| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 8.41| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 3.70| 
+
+Overfull \hbox (7.35837pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 8669.00| 
+
+Overfull \hbox (13.81186pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 [5%;10%[:5| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 1069--1069
+\T1/qtm/m/n/10 7.55| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.50366pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 12.29| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.2198pt too wide) in paragraph at lines 1069--1069
+\T1/qtm/m/n/10 25.87| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (12.4306pt too wide) in paragraph at lines 1069--1069
+\T1/qtm/m/n/10 174409.78| 
+
+Overfull \hbox (16.34212pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 1610734.50| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 1.17| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 8.35| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 3.57| 
+
+Overfull \hbox (12.35837pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 23948.00| 
+
+Overfull \hbox (23.81186pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 [10%;25%[:10| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 1069--1069
+\T1/qtm/m/n/10 7.63| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.50366pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 12.88| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.2198pt too wide) in paragraph at lines 1069--1069
+\T1/qtm/m/n/10 25.95| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (12.4306pt too wide) in paragraph at lines 1069--1069
+\T1/qtm/m/n/10 785172.06| 
+
+Overfull \hbox (16.34212pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 7414507.00| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 1.34| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 8.49| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 3.72| 
+
+Overfull \hbox (17.35837pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 106965.00| 
+
+Overfull \hbox (23.81186pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 [25%;45%[:25| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 1069--1069
+\T1/qtm/m/n/10 7.37| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.50366pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 12.90| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.2198pt too wide) in paragraph at lines 1069--1069
+\T1/qtm/m/n/10 25.96| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (17.4306pt too wide) in paragraph at lines 1069--1069
+\T1/qtm/m/n/10 1072950.88| 
+
+Overfull \hbox (16.34212pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 9864000.00| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 1.40| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 8.23| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 3.66| 
+
+Overfull \hbox (17.35837pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 150482.00| 
+
+Overfull \hbox (16.59186pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 [45%;inf[:45| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 1069--1069
+\T1/qtm/m/n/10 6.29| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.50366pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 12.90| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.2198pt too wide) in paragraph at lines 1069--1069
+\T1/qtm/m/n/10 25.96| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (17.4306pt too wide) in paragraph at lines 1069--1069
+\T1/qtm/m/n/10 1146740.38| 
+
+Overfull \hbox (16.34212pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 9914919.00| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 1.59| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 7.37| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 3.85| 
+
+Overfull \hbox (17.35837pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 190867.00| 
+[3] (./index.ind) [4] (./index.aux) )
+(see the transcript file for additional information){/usr/share/texmf/fonts/enc
+/dvips/tex-gyre/q-ec.enc}{/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ts1.enc}<
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/tex
+mf/fonts/type1/public/tex-gyre/qhvb.pfb></usr/share/texmf/fonts/type1/public/te
+x-gyre/qtmb.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qtmr.pfb></usr/sh
+are/texmf/fonts/type1/public/tex-gyre/qtmri.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/txfonts/t1xbtt.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/txfonts/t1xtt.pfb>
+Output written on index.pdf (4 pages, 505731 bytes).
+Transcript written on index.log.
+Latexmk: Index file 'index.idx' was written
+Latexmk: Log file says output to 'index.pdf'
+Rule 'pdflatex': File changes, etc:
+   Changed files, or newly in use since previous run(s):
+      'index.toc'
+------------
+Run number 3 of rule 'pdflatex'
+------------
+------------
+Running 'pdflatex   -recorder  "index.tex"'
+------------
+Latexmk: Examining 'index.log'
+=== TeX engine is 'pdfTeX'
+Latexmk: applying rule 'pdflatex'...
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(./index.tex
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-01-21> (./sphinxhowto.cls
+Document Class: sphinxhowto 2019/12/01 v2.3.0 Document class (Sphinx howto)
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo)))
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/cmap/cmap.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty<<t1.cmap>>)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+(/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
+(/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf))
+(/usr/share/texmf/tex/latex/tex-gyre/tgtermes.sty
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty)))
+(/usr/share/texmf/tex/latex/tex-gyre/tgheros.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/fncychap/fncychap.sty) (./sphinx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def))
+(./sphinxoptionshyperref.sty) (./sphinxoptionsgeometry.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/wrapfig/wrapfig.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/capt-of/capt-of.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)))
+(./sphinxlatexgraphics.sty) (./sphinxpackageboxes.sty)
+(./sphinxlatexadmonitions.sty
+(/usr/share/texlive/texmf-dist/tex/latex/framed/framed.sty))
+(./sphinxlatexliterals.sty
+(/usr/share/texlive/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/base/alltt.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/upquote/upquote.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/needspace/needspace.sty))
+(./sphinxlatexshadowbox.sty) (./sphinxlatexcontainers.sty)
+(./sphinxhighlight.sty) (./sphinxlatextables.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tabulary/tabulary.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty))
+(./sphinxlatexnumfig.sty) (./sphinxlatexlists.sty) (./sphinxpackagefootnote.sty
+) (./sphinxlatexindbibtoc.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/makeidx.sty))
+(./sphinxlatexstylepage.sty
+(/usr/share/texlive/texmf-dist/tex/latex/parskip/parskip.sty
+(/usr/share/texlive/texmf-dist/tex/latex/parskip/parskip-2001-04-09.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty))
+(./sphinxlatexstyleheadings.sty
+(/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty))
+(./sphinxlatexstyletext.sty) (./sphinxlatexobjects.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty))
+(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref-langpatches.def)
+(/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def)
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+(/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+(/usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+(/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/hypcap.sty)
+(./sphinxmessages.sty)
+Writing index file index.idx
+(/usr/share/texmf/tex/latex/tex-gyre/t1qtm.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def)
+(./index.aux)
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty))
+(./index.out) (./index.out) (/usr/share/texmf/tex/latex/tex-gyre/t1qhv.fd)<<ot1
+.cmap>><<oml.cmap>><<oms.cmap>><<omx.cmap>>
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd) (./index.toc)
+(/usr/share/texmf/tex/latex/tex-gyre/ts1qtm.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/txfonts/t1txtt.fd) [1{/var/lib/texmf/f
+onts/map/pdftex/updmap/pdftex.map} <./initial_dem_diff_snapshot.png> <./initial
+_dem_diff_pdf.png> <./initial_dem_diff_cdf.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 295--295
+[]\T1/qtm/m/n/10 Set
+
+Underfull \hbox (badness 10000) in paragraph at lines 295--295
+[]\T1/qtm/m/n/10 per-
+
+Overfull \hbox (18.82095pt too wide) in paragraph at lines 295--295
+\T1/qtm/m/n/10 cent_valid_points| 
+
+Overfull \hbox (6.66367pt too wide) in paragraph at lines 295--295
+[]\T1/qtm/m/n/10 mean| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 295--295
+[]\T1/qtm/m/n/10 me-
+
+Overfull \hbox (2.22366pt too wide) in paragraph at lines 295--295
+[]\T1/qtm/m/n/10 max| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 295--295
+[]\T1/qtm/m/n/10 per-
+
+Overfull \hbox (6.11356pt too wide) in paragraph at lines 295--295
+\T1/qtm/m/n/10 centil_90| 
+
+Overfull \hbox (19.89592pt too wide) in paragraph at lines 295--295
+[]\T1/qtm/m/n/10 squared_sum| 
+
+Overfull \hbox (7.22366pt too wide) in paragraph at lines 295--295
+[]\T1/qtm/m/n/10 nmad| 
+
+Overfull \hbox (4.64365pt too wide) in paragraph at lines 295--295
+[]\T1/qtm/m/n/10 rmse| 
+
+Overfull \hbox (14.64943pt too wide) in paragraph at lines 295--295
+[]\T1/qtm/m/n/10 global:[1]| 
+
+Overfull \hbox (16.05423pt too wide) in paragraph at lines 295--295
+[]\T1/qtm/m/n/10 861021.00| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 295--295
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 295--295
+\T1/qtm/m/n/10 6.78| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 295--295
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.50366pt too wide) in paragraph at lines 295--295
+[]\T1/qtm/m/n/10 12.90| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 295--295
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (6.4272pt too wide) in paragraph at lines 295--295
+\T1/qtm/m/n/10 25.96| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 295--295
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (15.87086pt too wide) in paragraph at lines 295--295
+\T1/qtm/m/n/10 5638297.00| 
+
+Overfull \hbox (19.72592pt too wide) in paragraph at lines 295--295
+[]\T1/qtm/m/n/10 50796252.00| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 295--295
+[]\T1/qtm/m/n/10 1.59| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 295--295
+[]\T1/qtm/m/n/10 7.82| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 295--295
+[]\T1/qtm/m/n/10 3.89| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 Set
+
+Overfull \hbox (6.66367pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 mean| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 me-
+
+Overfull \hbox (2.22366pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 max| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 per-
+
+Overfull \hbox (7.64752pt too wide) in paragraph at lines 555--555
+\T1/qtm/m/n/10 centil_90| 
+
+Overfull \hbox (21.51212pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 squared_sum| 
+
+Overfull \hbox (7.22366pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 nmad| 
+
+Overfull \hbox (4.64365pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 rmse| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 per-
+
+Overfull \hbox (21.38718pt too wide) in paragraph at lines 555--555
+\T1/qtm/m/n/10 cent_valid_points| 
+
+Overfull \hbox (8.81186pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 [0%;5%[:0| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 555--555
+\T1/qtm/m/n/10 7.02| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 9.37| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.2198pt too wide) in paragraph at lines 555--555
+\T1/qtm/m/n/10 19.11| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (2.4306pt too wide) in paragraph at lines 555--555
+\T1/qtm/m/n/10 1094.53| 
+
+Overfull \hbox (1.34212pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 9187.03| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 0.78| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 7.67| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 3.11| 
+
+Overfull \hbox (2.35837pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 160.00| 
+
+Overfull \hbox (13.81186pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 [5%;10%[:5| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 555--555
+\T1/qtm/m/n/10 6.82| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.50366pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 10.79| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.2198pt too wide) in paragraph at lines 555--555
+\T1/qtm/m/n/10 25.70| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (2.4306pt too wide) in paragraph at lines 555--555
+\T1/qtm/m/n/10 8008.12| 
+
+Overfull \hbox (6.34212pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 61546.67| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 0.68| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 7.24| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 2.44| 
+
+Overfull \hbox (7.35837pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 1224.00| 
+
+Overfull \hbox (23.81186pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 [10%;25%[:10| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 555--555
+\T1/qtm/m/n/10 6.79| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.50366pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 12.81| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.2198pt too wide) in paragraph at lines 555--555
+\T1/qtm/m/n/10 25.96| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (12.4306pt too wide) in paragraph at lines 555--555
+\T1/qtm/m/n/10 202324.12| 
+
+Overfull \hbox (16.34212pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 1562551.62| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 0.80| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 7.24| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 2.52| 
+
+Overfull \hbox (12.35837pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 30884.00| 
+
+Overfull \hbox (23.81186pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 [25%;45%[:25| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 555--555
+\T1/qtm/m/n/10 6.82| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.50366pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 12.87| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.2198pt too wide) in paragraph at lines 555--555
+\T1/qtm/m/n/10 25.96| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (12.4306pt too wide) in paragraph at lines 555--555
+\T1/qtm/m/n/10 370023.06| 
+
+Overfull \hbox (16.34212pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 2935363.50| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 1.02| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 7.35| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 2.76| 
+
+Overfull \hbox (12.35837pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 56083.00| 
+
+Overfull \hbox (16.59186pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 [45%;inf[:45| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 555--555
+\T1/qtm/m/n/10 6.51| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.50366pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 12.90| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.2198pt too wide) in paragraph at lines 555--555
+\T1/qtm/m/n/10 25.96| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (17.4306pt too wide) in paragraph at lines 555--555
+\T1/qtm/m/n/10 1416136.62| 
+
+Overfull \hbox (21.34212pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 12780142.00| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 2.20| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 7.66| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 4.05| 
+
+Overfull \hbox (17.35837pt too wide) in paragraph at lines 555--555
+[]\T1/qtm/m/n/10 222285.00| 
+[2 <./final_dem_diff_snapshot.png> <./final_dem_diff_pdf.png> <./final_dem_diff
+_cdf.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 Set
+
+Overfull \hbox (6.66367pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 mean| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 me-
+
+Overfull \hbox (2.22366pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 max| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 per-
+
+Overfull \hbox (7.64752pt too wide) in paragraph at lines 812--812
+\T1/qtm/m/n/10 centil_90| 
+
+Overfull \hbox (21.51212pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 squared_sum| 
+
+Overfull \hbox (7.22366pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 nmad| 
+
+Overfull \hbox (4.64365pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 rmse| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 per-
+
+Overfull \hbox (21.38718pt too wide) in paragraph at lines 812--812
+\T1/qtm/m/n/10 cent_valid_points| 
+
+Overfull \hbox (8.81186pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 [0%;5%[:0| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 812--812
+\T1/qtm/m/n/10 7.02| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 9.37| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.2198pt too wide) in paragraph at lines 812--812
+\T1/qtm/m/n/10 19.11| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (2.4306pt too wide) in paragraph at lines 812--812
+\T1/qtm/m/n/10 1094.53| 
+
+Overfull \hbox (1.34212pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 9187.03| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 0.78| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 7.67| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 3.11| 
+
+Overfull \hbox (2.35837pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 160.00| 
+
+Overfull \hbox (13.81186pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 [5%;10%[:5| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 812--812
+\T1/qtm/m/n/10 6.82| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.50366pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 10.79| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.2198pt too wide) in paragraph at lines 812--812
+\T1/qtm/m/n/10 25.70| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (2.4306pt too wide) in paragraph at lines 812--812
+\T1/qtm/m/n/10 8008.12| 
+
+Overfull \hbox (6.34212pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 61546.67| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 0.68| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 7.24| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 2.44| 
+
+Overfull \hbox (7.35837pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 1224.00| 
+
+Overfull \hbox (23.81186pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 [10%;25%[:10| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 812--812
+\T1/qtm/m/n/10 6.79| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.50366pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 12.81| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.2198pt too wide) in paragraph at lines 812--812
+\T1/qtm/m/n/10 25.96| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (12.4306pt too wide) in paragraph at lines 812--812
+\T1/qtm/m/n/10 202324.12| 
+
+Overfull \hbox (16.34212pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 1562551.62| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 0.80| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 7.24| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 2.52| 
+
+Overfull \hbox (12.35837pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 30884.00| 
+
+Overfull \hbox (23.81186pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 [25%;45%[:25| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 812--812
+\T1/qtm/m/n/10 6.82| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.50366pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 12.87| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.2198pt too wide) in paragraph at lines 812--812
+\T1/qtm/m/n/10 25.96| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (12.4306pt too wide) in paragraph at lines 812--812
+\T1/qtm/m/n/10 370023.06| 
+
+Overfull \hbox (16.34212pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 2935363.50| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 1.02| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 7.35| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 2.76| 
+
+Overfull \hbox (12.35837pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 56083.00| 
+
+Overfull \hbox (16.59186pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 [45%;inf[:45| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 812--812
+\T1/qtm/m/n/10 6.51| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.50366pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 12.90| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.2198pt too wide) in paragraph at lines 812--812
+\T1/qtm/m/n/10 25.96| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (17.4306pt too wide) in paragraph at lines 812--812
+\T1/qtm/m/n/10 1416136.62| 
+
+Overfull \hbox (21.34212pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 12780142.00| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 2.20| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 7.66| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 4.05| 
+
+Overfull \hbox (17.35837pt too wide) in paragraph at lines 812--812
+[]\T1/qtm/m/n/10 222285.00| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 Set
+
+Overfull \hbox (6.66367pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 mean| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 me-
+
+Overfull \hbox (2.22366pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 max| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 per-
+
+Overfull \hbox (7.64752pt too wide) in paragraph at lines 1069--1069
+\T1/qtm/m/n/10 centil_90| 
+
+Overfull \hbox (21.51212pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 squared_sum| 
+
+Overfull \hbox (7.22366pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 nmad| 
+
+Overfull \hbox (4.64365pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 rmse| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 per-
+
+Overfull \hbox (21.38718pt too wide) in paragraph at lines 1069--1069
+\T1/qtm/m/n/10 cent_valid_points| 
+
+Overfull \hbox (8.81186pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 [0%;5%[:0| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 1069--1069
+\T1/qtm/m/n/10 7.55| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.50366pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 11.96| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.2198pt too wide) in paragraph at lines 1069--1069
+\T1/qtm/m/n/10 25.89| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.4306pt too wide) in paragraph at lines 1069--1069
+\T1/qtm/m/n/10 63142.47| 
+
+Overfull \hbox (11.34212pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 591026.75| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 1.22| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 8.41| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 3.70| 
+
+Overfull \hbox (7.35837pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 8669.00| 
+
+Overfull \hbox (13.81186pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 [5%;10%[:5| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 1069--1069
+\T1/qtm/m/n/10 7.55| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.50366pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 12.29| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.2198pt too wide) in paragraph at lines 1069--1069
+\T1/qtm/m/n/10 25.87| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (12.4306pt too wide) in paragraph at lines 1069--1069
+\T1/qtm/m/n/10 174409.78| 
+
+Overfull \hbox (16.34212pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 1610734.50| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 1.17| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 8.35| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 3.57| 
+
+Overfull \hbox (12.35837pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 23948.00| 
+
+Overfull \hbox (23.81186pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 [10%;25%[:10| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 1069--1069
+\T1/qtm/m/n/10 7.63| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.50366pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 12.88| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.2198pt too wide) in paragraph at lines 1069--1069
+\T1/qtm/m/n/10 25.95| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (12.4306pt too wide) in paragraph at lines 1069--1069
+\T1/qtm/m/n/10 785172.06| 
+
+Overfull \hbox (16.34212pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 7414507.00| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 1.34| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 8.49| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 3.72| 
+
+Overfull \hbox (17.35837pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 106965.00| 
+
+Overfull \hbox (23.81186pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 [25%;45%[:25| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 1069--1069
+\T1/qtm/m/n/10 7.37| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.50366pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 12.90| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.2198pt too wide) in paragraph at lines 1069--1069
+\T1/qtm/m/n/10 25.96| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (17.4306pt too wide) in paragraph at lines 1069--1069
+\T1/qtm/m/n/10 1072950.88| 
+
+Overfull \hbox (16.34212pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 9864000.00| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 1.40| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 8.23| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 3.66| 
+
+Overfull \hbox (17.35837pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 150482.00| 
+
+Overfull \hbox (16.59186pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 [45%;inf[:45| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 1069--1069
+\T1/qtm/m/n/10 6.29| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.50366pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 12.90| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (7.2198pt too wide) in paragraph at lines 1069--1069
+\T1/qtm/m/n/10 25.96| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 -
+
+Overfull \hbox (17.4306pt too wide) in paragraph at lines 1069--1069
+\T1/qtm/m/n/10 1146740.38| 
+
+Overfull \hbox (16.34212pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 9914919.00| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 1.59| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 7.37| 
+
+Overfull \hbox (2.50366pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 3.85| 
+
+Overfull \hbox (17.35837pt too wide) in paragraph at lines 1069--1069
+[]\T1/qtm/m/n/10 190867.00| 
+[3] (./index.ind) [4] (./index.aux) )
+(see the transcript file for additional information){/usr/share/texmf/fonts/enc
+/dvips/tex-gyre/q-ec.enc}{/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ts1.enc}<
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/tex
+mf/fonts/type1/public/tex-gyre/qhvb.pfb></usr/share/texmf/fonts/type1/public/te
+x-gyre/qtmb.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qtmr.pfb></usr/sh
+are/texmf/fonts/type1/public/tex-gyre/qtmri.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/txfonts/t1xbtt.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/txfonts/t1xtt.pfb>
+Output written on index.pdf (4 pages, 505731 bytes).
+Transcript written on index.log.
+Latexmk: Index file 'index.idx' was written
+Latexmk: Log file says output to 'index.pdf'
+Latexmk: Examining 'index.log'
+=== TeX engine is 'pdfTeX'
+Latexmk: All targets (index.pdf) are up-to-date
+make[1] : on quitte le répertoire « /home/duboise/work/src/discover-cnes-3d-tools/data_turkey/outputs_demcompare_diff_dsm/report/src/build/latex »
+pdflatex finished; the PDF files are in build/latex.

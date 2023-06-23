@@ -1,0 +1,546 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Demcompare report &#8212;   documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/haiku.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+  </head><body>
+      <div class="header" role="banner"><h1 class="heading"><a href="#">
+          <span>  documentation</span></a></h1>
+        <h2 class="heading"><span>Demcompare report</span></h2>
+      </div>
+      <div class="topnav" role="navigation" aria-label="top navigation">
+      
+        <p>
+        <a class="uplink" href="#">Contents</a>
+        </p>
+
+      </div>
+      <div class="content" role="main">
+        
+        
+  <section id="demcompare-report">
+<h1>Demcompare report<a class="headerlink" href="#demcompare-report" title="Permalink to this heading">¶</a></h1>
+<ul class="simple">
+<li><p><em>Generated date:</em> 23/06/23 18h04</p></li>
+<li><p><em>Demcompare version:</em> 0.5.2</p></li>
+<li><p><em>Documentation:</em> <a class="reference external" href="https://demcompare.readthedocs.io/">https://demcompare.readthedocs.io/</a></p></li>
+<li><p><em>Repository:</em> <a class="reference external" href="https://github.com/CNES/demcompare">https://github.com/CNES/demcompare</a></p></li>
+</ul>
+<section id="image-views">
+<h2>Image views<a class="headerlink" href="#image-views" title="Permalink to this heading">¶</a></h2>
+<section id="initial-elevation-ref-sec">
+<h3><strong>Initial elevation (REF-SEC)</strong><a class="headerlink" href="#initial-elevation-ref-sec" title="Permalink to this heading">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 25%" />
+<col style="width: 48%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Image view</p></td>
+<td><p>Histogram</p></td>
+<td><p>Cumulative distribution</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="_images/initial_dem_diff_snapshot.png"><img alt="img" src="_images/initial_dem_diff_snapshot.png" style="width: 100%;" /></a></p></td>
+<td><p><a class="reference internal" href="_images/initial_dem_diff_pdf.png"><img alt="pdf" src="_images/initial_dem_diff_pdf.png" style="width: 100%;" /></a></p></td>
+<td><p><a class="reference internal" href="_images/initial_dem_diff_cdf.png"><img alt="cdf" src="_images/initial_dem_diff_cdf.png" style="width: 100%;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="final-elevation-after-coregistration-coreg-ref-coreg-sec">
+<h3><strong>Final elevation after coregistration (COREG_REF-COREG_SEC)</strong><a class="headerlink" href="#final-elevation-after-coregistration-coreg-ref-coreg-sec" title="Permalink to this heading">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 25%" />
+<col style="width: 48%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Image view</p></td>
+<td><p>Histogram</p></td>
+<td><p>Cumulative distribution</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="_images/final_dem_diff_snapshot.png"><img alt="img2" src="_images/final_dem_diff_snapshot.png" style="width: 100%;" /></a></p></td>
+<td><p><a class="reference internal" href="_images/final_dem_diff_pdf.png"><img alt="pdf2" src="_images/final_dem_diff_pdf.png" style="width: 100%;" /></a></p></td>
+<td><p><a class="reference internal" href="_images/final_dem_diff_cdf.png"><img alt="cdf2" src="_images/final_dem_diff_cdf.png" style="width: 100%;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="stats-results">
+<h2>Stats Results<a class="headerlink" href="#stats-results" title="Permalink to this heading">¶</a></h2>
+<p>The <a class="reference external" href="https://demcompare.readthedocs.io/en/stable/userguide/statistics.html#metrics">stats metrics</a>
+are organized around
+<a class="reference external" href="https://demcompare.readthedocs.io/en/stable/userguide/statistics.html#classification-layers">classification layers and modes</a>.</p>
+<p>Stats are generated from:</p>
+<ul class="simple">
+<li><p><strong>input_ref</strong> when one input dem and statistics only</p></li>
+<li><p>reprojected <strong>input_ref - input_sec</strong> difference when statistics only</p></li>
+<li><p>reprojected and coregistered <strong>input_ref - input_sec</strong> difference with coregistration and statistics</p></li>
+</ul>
+<section id="classification-layer-global">
+<h3>Classification layer: global<a class="headerlink" href="#classification-layer-global" title="Permalink to this heading">¶</a></h3>
+<section id="mode-standard">
+<span id="standard"></span><h4>Mode: standard<a class="headerlink" href="#mode-standard" title="Permalink to this heading">¶</a></h4>
+<section id="table-showing-comparison-metrics">
+<h5>Table showing comparison metrics<a class="headerlink" href="#table-showing-comparison-metrics" title="Permalink to this heading">¶</a></h5>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Set Name</p></td>
+<td><p>nbpts</p></td>
+<td><p>percent_valid_points</p></td>
+<td><p>mean</p></td>
+<td><p>median</p></td>
+<td><p>max</p></td>
+<td><p>min</p></td>
+<td><p>sum</p></td>
+<td><p>percentil_90</p></td>
+<td><p>squared_sum</p></td>
+<td><p>nmad</p></td>
+<td><p>rmse</p></td>
+<td><p>std</p></td>
+</tr>
+<tr class="row-even"><td><p>global:[1]</p></td>
+<td><p>858954.00</p></td>
+<td><p>80.02</p></td>
+<td><p>0.38</p></td>
+<td><p>0.38</p></td>
+<td><p>19.76</p></td>
+<td><p>-18.57</p></td>
+<td><p>311684.53</p></td>
+<td><p>7.91</p></td>
+<td><p>12267602.00</p></td>
+<td><p>1.58</p></td>
+<td><p>3.85</p></td>
+<td><p>3.83</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+</section>
+<section id="classification-layer-slope0">
+<h3>Classification layer: Slope0<a class="headerlink" href="#classification-layer-slope0" title="Permalink to this heading">¶</a></h3>
+<section id="id1">
+<span id="id2"></span><h4>Mode: standard<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h4>
+<section id="id3">
+<h5>Table showing comparison metrics<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h5>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Set Name</p></td>
+<td><p>mean</p></td>
+<td><p>median</p></td>
+<td><p>max</p></td>
+<td><p>min</p></td>
+<td><p>sum</p></td>
+<td><p>percentil_90</p></td>
+<td><p>squared_sum</p></td>
+<td><p>nmad</p></td>
+<td><p>rmse</p></td>
+<td><p>std</p></td>
+<td><p>nbpts</p></td>
+<td><p>percent_valid_points</p></td>
+</tr>
+<tr class="row-even"><td><p>[0%;5%[:0</p></td>
+<td><p>-0.09</p></td>
+<td><p>0.41</p></td>
+<td><p>3.35</p></td>
+<td><p>-11.03</p></td>
+<td><p>-12.70</p></td>
+<td><p>3.01</p></td>
+<td><p>809.71</p></td>
+<td><p>0.71</p></td>
+<td><p>2.35</p></td>
+<td><p>2.35</p></td>
+<td><p>154.00</p></td>
+<td><p>0.01</p></td>
+</tr>
+<tr class="row-odd"><td><p>[5%;10%[:5</p></td>
+<td><p>0.20</p></td>
+<td><p>0.41</p></td>
+<td><p>17.96</p></td>
+<td><p>-16.75</p></td>
+<td><p>236.27</p></td>
+<td><p>2.94</p></td>
+<td><p>7348.24</p></td>
+<td><p>0.77</p></td>
+<td><p>2.48</p></td>
+<td><p>2.47</p></td>
+<td><p>1233.00</p></td>
+<td><p>0.11</p></td>
+</tr>
+<tr class="row-even"><td><p>[10%;25%[:10</p></td>
+<td><p>0.30</p></td>
+<td><p>0.40</p></td>
+<td><p>19.53</p></td>
+<td><p>-17.82</p></td>
+<td><p>9115.88</p></td>
+<td><p>2.64</p></td>
+<td><p>170525.20</p></td>
+<td><p>0.81</p></td>
+<td><p>2.37</p></td>
+<td><p>2.35</p></td>
+<td><p>31363.00</p></td>
+<td><p>2.92</p></td>
+</tr>
+<tr class="row-odd"><td><p>[25%;45%[:25</p></td>
+<td><p>0.27</p></td>
+<td><p>0.38</p></td>
+<td><p>19.74</p></td>
+<td><p>-18.47</p></td>
+<td><p>14573.07</p></td>
+<td><p>3.85</p></td>
+<td><p>389947.22</p></td>
+<td><p>1.03</p></td>
+<td><p>2.68</p></td>
+<td><p>2.67</p></td>
+<td><p>56127.00</p></td>
+<td><p>5.23</p></td>
+</tr>
+<tr class="row-even"><td><p>[45%;inf[:45</p></td>
+<td><p>0.71</p></td>
+<td><p>0.51</p></td>
+<td><p>19.76</p></td>
+<td><p>-18.57</p></td>
+<td><p>145952.77</p></td>
+<td><p>7.29</p></td>
+<td><p>3503338.50</p></td>
+<td><p>2.26</p></td>
+<td><p>4.13</p></td>
+<td><p>4.06</p></td>
+<td><p>210191.00</p></td>
+<td><p>19.58</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="mode-intersection">
+<span id="intersection"></span><h4>Mode: intersection<a class="headerlink" href="#mode-intersection" title="Permalink to this heading">¶</a></h4>
+<section id="id4">
+<h5>Table showing comparison metrics<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h5>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Set Name</p></td>
+<td><p>mean</p></td>
+<td><p>median</p></td>
+<td><p>max</p></td>
+<td><p>min</p></td>
+<td><p>sum</p></td>
+<td><p>percentil_90</p></td>
+<td><p>squared_sum</p></td>
+<td><p>nmad</p></td>
+<td><p>rmse</p></td>
+<td><p>std</p></td>
+<td><p>nbpts</p></td>
+<td><p>percent_valid_points</p></td>
+</tr>
+<tr class="row-even"><td><p>[0%;5%[:0</p></td>
+<td><p>-0.09</p></td>
+<td><p>0.41</p></td>
+<td><p>3.35</p></td>
+<td><p>-11.03</p></td>
+<td><p>-12.70</p></td>
+<td><p>3.01</p></td>
+<td><p>809.71</p></td>
+<td><p>0.71</p></td>
+<td><p>2.35</p></td>
+<td><p>2.35</p></td>
+<td><p>154.00</p></td>
+<td><p>0.01</p></td>
+</tr>
+<tr class="row-odd"><td><p>[5%;10%[:5</p></td>
+<td><p>0.20</p></td>
+<td><p>0.41</p></td>
+<td><p>17.96</p></td>
+<td><p>-16.75</p></td>
+<td><p>236.27</p></td>
+<td><p>2.94</p></td>
+<td><p>7348.24</p></td>
+<td><p>0.77</p></td>
+<td><p>2.48</p></td>
+<td><p>2.47</p></td>
+<td><p>1233.00</p></td>
+<td><p>0.11</p></td>
+</tr>
+<tr class="row-even"><td><p>[10%;25%[:10</p></td>
+<td><p>0.30</p></td>
+<td><p>0.40</p></td>
+<td><p>19.53</p></td>
+<td><p>-17.82</p></td>
+<td><p>9115.88</p></td>
+<td><p>2.64</p></td>
+<td><p>170525.20</p></td>
+<td><p>0.81</p></td>
+<td><p>2.37</p></td>
+<td><p>2.35</p></td>
+<td><p>31363.00</p></td>
+<td><p>2.92</p></td>
+</tr>
+<tr class="row-odd"><td><p>[25%;45%[:25</p></td>
+<td><p>0.27</p></td>
+<td><p>0.38</p></td>
+<td><p>19.74</p></td>
+<td><p>-18.47</p></td>
+<td><p>14573.07</p></td>
+<td><p>3.85</p></td>
+<td><p>389947.22</p></td>
+<td><p>1.03</p></td>
+<td><p>2.68</p></td>
+<td><p>2.67</p></td>
+<td><p>56127.00</p></td>
+<td><p>5.23</p></td>
+</tr>
+<tr class="row-even"><td><p>[45%;inf[:45</p></td>
+<td><p>0.71</p></td>
+<td><p>0.51</p></td>
+<td><p>19.76</p></td>
+<td><p>-18.57</p></td>
+<td><p>145952.77</p></td>
+<td><p>7.29</p></td>
+<td><p>3503338.50</p></td>
+<td><p>2.26</p></td>
+<td><p>4.13</p></td>
+<td><p>4.06</p></td>
+<td><p>210191.00</p></td>
+<td><p>19.58</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="mode-exclusion">
+<span id="exclusion"></span><h4>Mode: exclusion<a class="headerlink" href="#mode-exclusion" title="Permalink to this heading">¶</a></h4>
+<section id="id5">
+<h5>Table showing comparison metrics<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h5>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Set Name</p></td>
+<td><p>mean</p></td>
+<td><p>median</p></td>
+<td><p>max</p></td>
+<td><p>min</p></td>
+<td><p>sum</p></td>
+<td><p>percentil_90</p></td>
+<td><p>squared_sum</p></td>
+<td><p>nmad</p></td>
+<td><p>rmse</p></td>
+<td><p>std</p></td>
+<td><p>nbpts</p></td>
+<td><p>percent_valid_points</p></td>
+</tr>
+<tr class="row-even"><td><p>[0%;5%[:0</p></td>
+<td><p>-0.40</p></td>
+<td><p>0.18</p></td>
+<td><p>19.43</p></td>
+<td><p>-18.56</p></td>
+<td><p>-3527.99</p></td>
+<td><p>6.96</p></td>
+<td><p>95199.14</p></td>
+<td><p>1.15</p></td>
+<td><p>3.29</p></td>
+<td><p>3.27</p></td>
+<td><p>9094.00</p></td>
+<td><p>0.85</p></td>
+</tr>
+<tr class="row-odd"><td><p>[5%;10%[:5</p></td>
+<td><p>-0.46</p></td>
+<td><p>0.18</p></td>
+<td><p>19.63</p></td>
+<td><p>-18.54</p></td>
+<td><p>-10994.08</p></td>
+<td><p>7.52</p></td>
+<td><p>288831.84</p></td>
+<td><p>1.19</p></td>
+<td><p>3.46</p></td>
+<td><p>3.43</p></td>
+<td><p>25024.00</p></td>
+<td><p>2.33</p></td>
+</tr>
+<tr class="row-even"><td><p>[10%;25%[:10</p></td>
+<td><p>-0.45</p></td>
+<td><p>0.14</p></td>
+<td><p>19.75</p></td>
+<td><p>-18.56</p></td>
+<td><p>-47958.51</p></td>
+<td><p>7.71</p></td>
+<td><p>1343027.88</p></td>
+<td><p>1.30</p></td>
+<td><p>3.55</p></td>
+<td><p>3.52</p></td>
+<td><p>111011.00</p></td>
+<td><p>10.34</p></td>
+</tr>
+<tr class="row-odd"><td><p>[25%;45%[:25</p></td>
+<td><p>-0.21</p></td>
+<td><p>0.20</p></td>
+<td><p>19.75</p></td>
+<td><p>-18.57</p></td>
+<td><p>-30418.94</p></td>
+<td><p>7.27</p></td>
+<td><p>1842645.25</p></td>
+<td><p>1.36</p></td>
+<td><p>3.53</p></td>
+<td><p>3.53</p></td>
+<td><p>152730.00</p></td>
+<td><p>14.23</p></td>
+</tr>
+<tr class="row-even"><td><p>[45%;inf[:45</p></td>
+<td><p>0.86</p></td>
+<td><p>0.62</p></td>
+<td><p>19.75</p></td>
+<td><p>-18.56</p></td>
+<td><p>158629.38</p></td>
+<td><p>8.45</p></td>
+<td><p>2822020.00</p></td>
+<td><p>1.57</p></td>
+<td><p>3.91</p></td>
+<td><p>3.82</p></td>
+<td><p>192706.00</p></td>
+<td><p>17.95</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+</section>
+</section>
+<section id="full-input-configuration">
+<h2>Full input configuration<a class="headerlink" href="#full-input-configuration" title="Permalink to this heading">¶</a></h2>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="w"> </span><span class="p">{</span>
+<span class="nt">&quot;output_dir&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/home/duboise/work/src/discover-cnes-3d-tools/data_turkey/outputs_demcompare_diff_dhm&quot;</span><span class="p">,</span>
+<span class="nt">&quot;input_ref&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;path&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/home/duboise/work/src/discover-cnes-3d-tools/data_turkey/outputs_bulldozer_post_event/DHM.tif&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;zunit&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;m&quot;</span>
+<span class="p">},</span>
+<span class="nt">&quot;input_sec&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;path&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/home/duboise/work/src/discover-cnes-3d-tools/data_turkey/outputs_bulldozer_pre_event/DHM.tif&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;zunit&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;m&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;geoid_georef&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;True&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;nodata&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span>
+<span class="p">},</span>
+<span class="nt">&quot;coregistration&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;method_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;nuth_kaab_internal&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;number_of_iterations&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">6</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;estimated_initial_shift_x&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;estimated_initial_shift_y&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;output_dir&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/home/duboise/work/src/discover-cnes-3d-tools/data_turkey/outputs_demcompare_diff_dhm&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;sampling_source&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;sec&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;save_optional_outputs&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span>
+<span class="p">},</span>
+<span class="nt">&quot;statistics&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;classification_layers&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;Slope0&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;slope&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;ranges&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">        </span><span class="mi">5</span><span class="p">,</span>
+<span class="w">        </span><span class="mi">10</span><span class="p">,</span>
+<span class="w">        </span><span class="mi">25</span><span class="p">,</span>
+<span class="w">        </span><span class="mi">45</span>
+<span class="w">      </span><span class="p">]</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;remove_outliers&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;True&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;output_dir&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/home/duboise/work/src/discover-cnes-3d-tools/data_turkey/outputs_demcompare_diff_dhm&quot;</span>
+<span class="p">},</span>
+<span class="nt">&quot;report&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;sphinx&quot;</span><span class="p">,</span>
+<span class="nt">&quot;otd&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;default_OTD&quot;</span>
+<span class="w"> </span><span class="p">}</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+      </div>
+      <div class="bottomnav" role="navigation" aria-label="bottom navigation">
+      
+        <p>
+        <a class="uplink" href="#">Contents</a>
+        </p>
+
+      </div>
+
+    <div class="footer" role="contentinfo">
+        &#169; Copyright .
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.3.0.
+    </div>
+  </body>
+</html>
