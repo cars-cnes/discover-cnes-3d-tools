@@ -1,0 +1,24 @@
+{
+    "inputs": {
+        "sensors" : {
+            "one": {
+                "image": "post_event_img1.tif",
+                "geomodel": "post_event_img1.geom",
+                "color": "post_event_color1.tif",
+                "no_data": 0
+            },
+            "two": {
+                "image": "post_event_img2.tif",
+                "geomodel": "post_event_img2.geom",
+                "color": "post_event_color2.tif",                
+                "no_data": 0
+	       }
+        },
+        "pairing": [["one", "two"]],
+        "initial_elevation": "srtm_dir/N37E036.hgt"
+    },
+    "output": {
+        "out_dir": "outputs_cars_post_event",
+        "dsm_basename": "cars_dsm_post_event.tif"
+    }
+}

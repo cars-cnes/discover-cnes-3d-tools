@@ -1,0 +1,49 @@
+#-------------------------#
+#       Parameters        #
+#-------------------------#
+# Input DSM path (expected format: "<folder_1>/<folder_2>/<file>.<[tif/tiff]>")
+dsmPath : "outputs_cars_pre_event/cars_dsm_pre_event.tif"
+# Output directory path (if the directory doesn't exist, create it)
+outputDir : "outputs_bulldozer_pre_event"
+
+#-------------------------#
+#         Options         #
+#-------------------------#
+# If True, generates the DHM (DSM - DTM) in the output directory 
+generateDhm : True
+# If null, the output DTM resolution will be the same as the input DSM (float value in meter)
+outputResolution : null
+# If null, bulldozer will use the maximum number of available CPU on your system
+nbMaxWorkers : 16
+
+#-------------------------#
+#    Advanced settings    #
+#-------------------------#
+
+# Foreground max object width (in meter)
+maxObjectWidth : 16
+# If True, this flag allows snapping DTM values above the DSM to the DSM values in order to satisfy the property that DTM is always below the DSM.
+checkIntersection: False
+# Minimum valid height value, None or a float value. If null this parameter is ignored
+minValidHeight: 0.0
+# If null, the nodata value will be extracted from the input DSM (float value or nan)
+noData : null
+# If True, keep the intermediate results
+developperMode : False
+
+#-------------------------#
+# Bulldozer core settings #
+#-------------------------#
+# /!\ Modify those data at your own risk (it is suggested to keep the default values) /!\
+
+# DetectDisturbedAreasAndFill part
+slopeThreshold : 2.0
+# numnumber of evaluated axis. Vertical and horizontal if true else vertical, horizontal and diagonals.
+fourConnexity : True
+
+# DtmExtraction part
+uniformFilterSize : 3
+preventUnhookIter : 10
+numOuterIter : 50
+numInnerIter : 10
+mpTileSize : 1500

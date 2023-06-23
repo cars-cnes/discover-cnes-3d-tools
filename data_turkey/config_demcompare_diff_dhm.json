@@ -1,0 +1,35 @@
+{
+    "output_dir": "./outputs_demcompare_diff_dhm/",
+	"input_ref" : {
+        "path": "outputs_bulldozer_post_event/DHM.tif",
+		"zunit" : "m"
+	},
+	"input_sec" : {
+        "path": "outputs_bulldozer_pre_event/DHM.tif",
+		"zunit" : "m",
+        "geoid_georef" : "True",		
+		"nodata" : 0
+	},
+	"coregistration": {
+		"method_name": "nuth_kaab_internal",
+		"number_of_iterations": 6,
+		"estimated_initial_shift_x": 0,
+		"estimated_initial_shift_y": 0
+	},	
+  "statistics": {
+    "classification_layers": {
+      "Slope0": {
+        "type": "slope",
+        "ranges": [
+          0,
+          5,
+          10,
+          25,
+          45
+        ]
+      }
+    },
+    "remove_outliers": "True"
+  },
+  "report": "default"
+}
