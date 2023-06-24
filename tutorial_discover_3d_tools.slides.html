@@ -15240,6 +15240,7 @@ div.jp-OutputPrompt {
 <li>python3-venv or virtualenv</li>
 <li>gcc &gt; 8 for vlfeat</li>
 <li>Internet access</li>
+<li>QGIS or other geotiff reader to see results</li>
 </ul>
 <p>Steps:</p>
 <ol start="0">
@@ -15607,7 +15608,7 @@ pip install notebook rise bokeh
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h1 id="DSM-productions-with-CARS">DSM productions with CARS<a class="anchor-link" href="#DSM-productions-with-CARS">&#182;</a></h1><ol>
-<li><p>Tutorial CARS : see dedicated slides</p>
+<li><p>Tutorial DSM production with CARS : see dedicated slides</p>
 </li>
 <li><p>Configure CARS with Turkey Data</p>
 </li>
@@ -15658,22 +15659,6 @@ pip install notebook rise bokeh
 </div>
 </div>
 </div>
-</div><div id="cell-id=350babf9-8e03-468a-a32b-b54a8b666575" class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
 </div></section><section >
 <div id="cell-id=f3c258fd-c871-43bf-90c4-51f7b759772b" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
@@ -15724,7 +15709,17 @@ cars config_cars_post_event.json</code></pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="DTM-and-DHM-productions-with-Bulldozer">DTM and DHM productions with Bulldozer<a class="anchor-link" href="#DTM-and-DHM-productions-with-Bulldozer">&#182;</a></h1>
+<h1 id="DTM-and-DHM-productions-with-Bulldozer">DTM and DHM productions with Bulldozer<a class="anchor-link" href="#DTM-and-DHM-productions-with-Bulldozer">&#182;</a></h1><ol>
+<li><p>Tutorial DTM and DHM production with Bulldozer : see dedicated slides</p>
+</li>
+<li><p>Configure Bulldozer with CARS DSM Turkey Data</p>
+</li>
+<li><p>Run pre event DTM and DHM production</p>
+</li>
+<li><p>Run post event DTM and DHM production</p>
+</li>
+</ol>
+
 </div>
 </div>
 </div>
@@ -15735,7 +15730,150 @@ cars config_cars_post_event.json</code></pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>TODO</p>
+
+</div>
+</div>
+</div>
+</div></section><section >
+<div id="cell-id=1c57a28c-5313-4e4e-bb96-0154a3e80ff0" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Bulldozer-configuration">Bulldozer configuration<a class="anchor-link" href="#Bulldozer-configuration">&#182;</a></h2><p><strong>config_bulldozer_pre_event.yaml</strong> example in <strong>data_gizeh</strong> directory:</p>
+<pre><code>#-------------------------#
+#       Parameters        #
+#-------------------------#
+# Input DSM path (expected format: &quot;&lt;folder_1&gt;/&lt;folder_2&gt;/&lt;file&gt;.&lt;[tif/tiff]&gt;&quot;)
+dsmPath : &quot;outputs_cars_pre_event/cars_dsm_pre_event.tif&quot;
+# Output directory path (if the directory doesn't exist, create it)
+outputDir : &quot;outputs_bulldozer_pre_event&quot;
+
+#-------------------------#
+#         Options         #
+#-------------------------#
+# If True, generates the DHM (DSM - DTM) in the output directory 
+generateDhm : True
+# If null, the output DTM resolution will be the same as the input DSM (float value in meter)
+outputResolution : null
+# If null, bulldozer will use the maximum number of available CPU on your system
+nbMaxWorkers : 16
+</code></pre>
+
+</div>
+</div>
+</div>
+</div></section><section >
+<div id="cell-id=995422f9-b6cc-4d8a-b916-eb10d059cd37" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Bulldozer-configuration">Bulldozer configuration<a class="anchor-link" href="#Bulldozer-configuration">&#182;</a></h2><p><strong>config_bulldozer_pre_event.yaml</strong> example in <strong>data_gizeh</strong> directory:</p>
+<pre><code>
+#-------------------------#
+#    Advanced settings    #
+#-------------------------#
+
+# Foreground max object width (in meter)
+maxObjectWidth : 16
+# If True, this flag allows snapping DTM values above the DSM to the DSM values in order to satisfy the property that DTM is always below the DSM.
+checkIntersection: False
+# Minimum valid height value, None or a float value. If null this parameter is ignored
+minValidHeight: 0.0
+# If null, the nodata value will be extracted from the input DSM (float value or nan)
+noData : null
+# If True, keep the intermediate results
+developperMode : False
+
+#-------------------------#
+# Bulldozer core settings #
+#-------------------------#
+# /!\ Modify those data at your own risk (it is suggested to keep the default values) /!\
+
+# DetectDisturbedAreasAndFill part
+slopeThreshold : 2.0
+# numnumber of evaluated axis. Vertical and horizontal if true else vertical, horizontal and diagonals.
+fourConnexity : True
+
+# DtmExtraction part
+uniformFilterSize : 3
+preventUnhookIter : 10
+numOuterIter : 50
+numInnerIter : 10
+mpTileSize : 1500
+
+</code></pre>
+
+</div>
+</div>
+</div>
+</div></section><section >
+<div id="cell-id=5d3bfdb4-6080-4e8a-b23c-3ee48bad4dd5" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Bulldozer-DTM-and-DHM-production">Bulldozer DTM and DHM production<a class="anchor-link" href="#Bulldozer-DTM-and-DHM-production">&#182;</a></h2><p>Steps:</p>
+<pre><code># in virtualenv before !
+cd data_gizeh
+# you need CARS generated DSM produced before.
+
+# run pre event production
+bulldozer --conf config_bulldozer_pre_event.yaml
+# run post event production from post event scene 1 and post event scene 2
+bulldozer --conf config_bulldozer_post_event.yaml</code></pre>
+
+</div>
+</div>
+</div>
+</div></section><section >
+<div id="cell-id=d200f692-b20e-4035-9090-bc8bdf4cc30c" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Bulldozer-pre-event-DTM-results">Bulldozer pre event DTM results<a class="anchor-link" href="#Bulldozer-pre-event-DTM-results">&#182;</a></h2><p><img src="images/bulldozer_dtm_pre_event.png" alt="collapse" width="550" align="center"/></p>
+
+</div>
+</div>
+</div>
+</div></section><section >
+<div id="cell-id=b9faa5be-6cf9-4d84-a080-11d6762b2640" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Bulldozer-post-event-DTM-results">Bulldozer post event DTM results<a class="anchor-link" href="#Bulldozer-post-event-DTM-results">&#182;</a></h2><p><img src="images/bulldozer_dtm_post_event.png" alt="collapse" width="550" align="center"/></p>
+
+</div>
+</div>
+</div>
+</div></section><section >
+<div id="cell-id=81771d8f-259f-48fb-b43b-2662befe45ef" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Bulldozer-pre-event-DHM-results">Bulldozer pre event DHM results<a class="anchor-link" href="#Bulldozer-pre-event-DHM-results">&#182;</a></h2><p><img src="images/bulldozer_dhm_pre_event.png" alt="collapse" width="550" align="center"/></p>
+
+</div>
+</div>
+</div>
+</div></section><section >
+<div id="cell-id=d715882d-7e70-4355-8f25-546cae55b811" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Bulldozer-post-event-DHM-results">Bulldozer post event DHM results<a class="anchor-link" href="#Bulldozer-post-event-DHM-results">&#182;</a></h2><p><img src="images/bulldozer_dhm_post_event.png" alt="collapse" width="550" align="center"/></p>
 
 </div>
 </div>
@@ -15747,7 +15885,13 @@ cars config_cars_post_event.json</code></pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="DSM-and-DHM-differences-with-Demcompare">DSM and DHM differences with Demcompare<a class="anchor-link" href="#DSM-and-DHM-differences-with-Demcompare">&#182;</a></h1>
+<h1 id="DHM-differences-with-Demcompare">DHM differences with Demcompare<a class="anchor-link" href="#DHM-differences-with-Demcompare">&#182;</a></h1><ol>
+<li>Demcompare tutorial (see dedicated slides)</li>
+<li>Demcompare configuration</li>
+<li>DSM and DHM differences production</li>
+<li>DSM and DHM differences results</li>
+</ol>
+
 </div>
 </div>
 </div>
@@ -15759,10 +15903,10 @@ cars config_cars_post_event.json</code></pre>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="DSM-vs-DHM-differences">DSM vs DHM differences<a class="anchor-link" href="#DSM-vs-DHM-differences">&#182;</a></h2><p>DSM differences is a raw difference between post event et pre event.</p>
-<p>Using Digital Height Models allows:</p>
+<p>Using Digital Height Models allows to:</p>
 <ul>
-<li>to normalize the height to zero (zero equal = terrain)</li>
-<li>remove vibrations of the satellite</li>
+<li>normalize the height to zero (zero equal = terrain)</li>
+<li>remove possible vibrations of the satellite</li>
 </ul>
 
 </div>
@@ -15775,60 +15919,106 @@ cars config_cars_post_event.json</code></pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Demcompare-tutorial">Demcompare tutorial<a class="anchor-link" href="#Demcompare-tutorial">&#182;</a></h2><p>TODO</p>
+<h2 id="Demcompare-configuration">Demcompare configuration<a class="anchor-link" href="#Demcompare-configuration">&#182;</a></h2><p><strong>config_demcompare_diff_dhm.json</strong> example in <strong>data_gizeh</strong> directory:</p>
+<pre><code>{
+    &quot;output_dir&quot;: &quot;./outputs_demcompare_diff_dhm/&quot;,
+	&quot;input_ref&quot; : {
+        &quot;path&quot;: &quot;outputs_bulldozer_post_event/DHM.tif&quot;,
+		&quot;zunit&quot; : &quot;m&quot;
+	},
+	&quot;input_sec&quot; : {
+        &quot;path&quot;: &quot;outputs_bulldozer_pre_event/DHM.tif&quot;,
+		&quot;zunit&quot; : &quot;m&quot;,
+        &quot;geoid_georef&quot; : &quot;True&quot;,		
+		&quot;nodata&quot; : 0
+	},
+	&quot;coregistration&quot;: {
+		&quot;method_name&quot;: &quot;nuth_kaab_internal&quot;,
+		&quot;number_of_iterations&quot;: 6,
+		&quot;estimated_initial_shift_x&quot;: 0,
+		&quot;estimated_initial_shift_y&quot;: 0
+	},	
+  &quot;statistics&quot;: {
+    &quot;classification_layers&quot;: {
+      &quot;Slope0&quot;: {
+        &quot;type&quot;: &quot;slope&quot;,
+        &quot;ranges&quot;: [
+          0,
+          5,
+          10,
+          25,
+          45
+        ]
+      }
+    },
+    &quot;remove_outliers&quot;: &quot;True&quot;
+  },
+  &quot;report&quot;: &quot;default&quot;
+}
+</code></pre>
 
 </div>
 </div>
 </div>
 </div></section><section >
-<div id="cell-id=776ff848-2638-4398-a47c-9b54f50a9611" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div id="cell-id=ea0a9f97-e8d8-416f-b036-48120b0d47d1" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Steps-for-DSM-differences">Steps for DSM differences<a class="anchor-link" href="#Steps-for-DSM-differences">&#182;</a></h2><ol start="2">
-<li><p>Demcompare configuration</p>
-</li>
-<li><p>Demcompare run on DSM</p>
-</li>
-</ol>
+<h2 id="DHM-differences-(POST-PRE)-results">DHM differences (POST-PRE) results<a class="anchor-link" href="#DHM-differences-(POST-PRE)-results">&#182;</a></h2><ul>
+<li>Blue: new elements</li>
+<li>Red: collapsed or removed elements</li>
+</ul>
 
 </div>
 </div>
 </div>
 </div></section><section >
-<div id="cell-id=b391f810-b1e1-428f-9d22-c5058422c9cf" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div id="cell-id=5a6b37bf-bd4e-42f5-b786-3eb8895f4810" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>todo</p>
+<h2 id="DHM-differences-(POST-PRE)-results">DHM differences (POST-PRE) results<a class="anchor-link" href="#DHM-differences-(POST-PRE)-results">&#182;</a></h2><p><img src="images/demcompare_dhm_diff.png" alt="collapse" width="550" align="center"/></p>
 
 </div>
 </div>
 </div>
 </div></section><section >
-<div id="cell-id=ee442fca-b6a4-4e5c-b768-fa851573adf8" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div id="cell-id=97f9340b-7768-4ac4-8cd3-259e565df546" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>todo</p>
+<h2 id="DHM-differences-(POST-PRE)-results-without-pre-and-post-coregistration">DHM differences (POST-PRE) results without pre and post coregistration<a class="anchor-link" href="#DHM-differences-(POST-PRE)-results-without-pre-and-post-coregistration">&#182;</a></h2><p><img src="images/demcompare_dhm_diff_without_coreg.png" alt="collapse" width="550" align="center"/></p>
 
 </div>
 </div>
 </div>
 </div></section><section >
-<div id="cell-id=8845bc83-021f-437a-8116-82a61973b6e5" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div id="cell-id=0418d4f5-a30f-4787-a247-acd810c2083b" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>todo</p>
+<h2 id="DHM-differences-(POST-PRE)-results-stacked-with-pre-event-DSM">DHM differences (POST-PRE) results stacked with pre event DSM<a class="anchor-link" href="#DHM-differences-(POST-PRE)-results-stacked-with-pre-event-DSM">&#182;</a></h2><p><img src="images/demcompare_dhm_diff_cars_clr_pre_event.png" alt="collapse" width="550" align="center"/></p>
+
+</div>
+</div>
+</div>
+</div></section><section >
+<div id="cell-id=3d86ee33-bc23-47b2-bbef-d9cf134a652f" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="DHM-differences-(POST-PRE)-stacked-with-post-event-DSM">DHM differences (POST-PRE) stacked with post event DSM<a class="anchor-link" href="#DHM-differences-(POST-PRE)-stacked-with-post-event-DSM">&#182;</a></h2><p><img src="images/demcompare_dhm_diff_cars_clr_post_event.png" alt="collapse" width="550" align="center"/></p>
 
 </div>
 </div>

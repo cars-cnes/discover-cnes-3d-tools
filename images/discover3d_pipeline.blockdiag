@@ -8,10 +8,10 @@ blockdiag {
   DSM [label = "DSM \n(CARS)"];
   DHM [label = "DTM and DHM \n(Bulldozer)"];
   DiffDHM [label = "DHM Diff \n(Demcompare)"];
-  DiffDSM [label = "DSM Diff \n(Demcompare)"];
+ // DiffDSM [label = "DSM Diff \n(Demcompare)"];
 
   Data -> DSM -> DHM -> DiffDHM;
-  Data -> DSM -> DiffDSM;
+//  Data -> DSM -> DiffDSM;
 
 }
 

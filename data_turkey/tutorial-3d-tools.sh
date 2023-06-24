@@ -20,11 +20,15 @@ echo "[Post_event]"
 bulldozer --conf config_bulldozer_post_event.yaml
 
 echo "[Demcompare] Run differences and stats processing"
-echo "[Post-Pre DSM diff]"
-demcompare config_demcompare_diff_dsm.json
 echo "[Post-Pre DHM diff]"
 demcompare config_demcompare_diff_dhm.json
 
+# other possible differences
+#echo "[Post-Pre DSM diff]"
+#demcompare config_demcompare_diff_dsm.json
+
+#echo "[Post-Pre DTM diff]"
+#demcompare config_demcompare_diff_dtm.json
 
 
 
