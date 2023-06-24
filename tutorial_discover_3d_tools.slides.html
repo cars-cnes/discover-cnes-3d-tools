@@ -15194,7 +15194,7 @@ div.jp-OutputPrompt {
 <h1 id="Outline">Outline<a class="anchor-link" href="#Outline">&#182;</a></h1><ul>
 <li>Tutorial preparation</li>
 <li>Introduction on real earthquake scenario</li>
-<li>Scenario data process steps</li>
+<li>Scenario steps</li>
 <li>Pre-event and post-event DSM productions with CARS</li>
 <li>Pre-event and post-event DTM productions with Bulldozer</li>
 <li>DTM differences with Demcompare</li>
@@ -15301,7 +15301,7 @@ pip install cars</code></pre>
 <ol start="4">
 <li>Install demcompare tool</li>
 </ol>
-<pre><code>   pip install demcompare
+<pre><code>   pip install demcompare[notebook]
 </code></pre>
 <p>Demcompare Doc: <a href="https://cars.readthedocs.io/">https://demcompare.readthedocs.io/</a></p>
 
@@ -15368,18 +15368,29 @@ pip install notebook rise bokeh
 <ol>
 <li><p>Connect a first time to <a href="https://jupyterhub.cnes.fr/">https://jupyterhub.cnes.fr/</a> (use a personal temporary account, ask presenters)</p>
 </li>
-<li><p>Select default configuration and wait (!)</p>
-</li>
-<li><p>Update your account with following needed but no to bother details in jupyter lab terminal :</p>
+<li><p>Select default configuration in &quot;Server Options&quot;, click &quot;Start&quot; and wait (!)</p>
 </li>
 </ol>
-<pre><code>   # update kernel to a virtualenv with cars, bulldozer and demcompare (update version if needed)
-   mkdir -p .local/share/jupyter/kernels
-   ln -s /softs/projets/cars/kits/cars-0.7.0/jupyter/kernels/cars-0.7.0/  .local/share/jupyter/kernels/
 
-   # resolve numba cache problem (!)
-   echo 'export NUMBA_CACHE_DIR=$TMPDIR' &gt;&gt; ~/.bashrc
-</code></pre>
+</div>
+</div>
+</div>
+</div></section><section >
+<div id="cell-id=78c8b825-e767-470e-ad0f-9043cd40c715" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="CNES-Jupyter-Hub-Method">CNES Jupyter Hub Method<a class="anchor-link" href="#CNES-Jupyter-Hub-Method">&#182;</a></h2><p>Steps:</p>
+<ol start="3">
+<li>Run a terminal in CNES jupyter lab with following needed but no to bother details:</li>
+</ol>
+<p>Update kernel to a virtualenv with cars, bulldozer and demcompare (update version if needed)</p>
+<pre><code>mkdir -p .local/share/jupyter/kernels
+ln -s /softs/projets/cars/kits/cars-0.7.0/jupyter/kernels/cars-0.7.0/  .local/share/jupyter/kernels/</code></pre>
+<p>Resolve numba cache problem</p>
+<pre><code>echo 'export NUMBA_CACHE_DIR=$TMPDIR' &gt;&gt; ~/.bashrc</code></pre>
 
 </div>
 </div>
@@ -15391,24 +15402,23 @@ pip install notebook rise bokeh
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="CNES-Jupyter-Hub-Method">CNES Jupyter Hub Method<a class="anchor-link" href="#CNES-Jupyter-Hub-Method">&#182;</a></h2><p>Prerequisites:</p>
-<ul>
-<li>Firefox (not too old)</li>
-<li>Internet access</li>
-</ul>
-<p>Steps:</p>
+<h2 id="CNES-Jupyter-Hub-Method">CNES Jupyter Hub Method<a class="anchor-link" href="#CNES-Jupyter-Hub-Method">&#182;</a></h2><p>Steps:</p>
 <ol start="4">
-<li><p>Stop the server (&quot;Shutdown&quot;)</p>
+<li><p>Stop the server (&quot;Shutdown&quot; or File-&gt; Hub Control Panel -&gt; &quot;Stop my server&quot;) and wait !</p>
 </li>
-<li><p>Reconnect to refresh kernels (&quot;Start my server&quot;) and select again default configuration.</p>
+<li><p>Reconnect to a server (&quot;Start my server&quot;) to refresh kernels and configuration and select again default configuration.</p>
 </li>
-<li><p>Copy data in your directory</p>
-<p>cp -R /softs/project/cars/tutorials/discover-cnes-3d-tools/ ~/</p>
-</li>
-<li><p>In a terminal, you can use tools with:</p>
-<p>module load cars/0.7.0</p>
+<li><p>Copy data in your directory in a jupyter terminal</p>
 </li>
 </ol>
+<p>Command:</p>
+<pre><code>cp -R /softs/project/cars/tutorials/discover-cnes-3d-tools/ ~/
+cd ~/discover-3d-tools/</code></pre>
+<ol start="8">
+<li>In a terminal, you can use cnes 3d tools using already install module</li>
+</ol>
+<p>Command:</p>
+<pre><code>module load cars/0.7.0</code></pre>
 
 </div>
 </div>
@@ -15587,11 +15597,12 @@ pip install notebook rise bokeh
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Scenario-data-process-steps.">Scenario data process steps.<a class="anchor-link" href="#Scenario-data-process-steps.">&#182;</a></h1><p><img src="images/discover3d_pipeline.svg" alt="scenario data process pipeline" align="center"/></p>
+<h1 id="Scenario-steps.">Scenario steps.<a class="anchor-link" href="#Scenario-steps.">&#182;</a></h1><p><img src="images/discover3d_pipeline.svg" alt="scenario data process pipeline" align="center"/></p>
 <ul>
 <li>From satellite pre and post event stereo data, pre and post event Digital Surface Models are created with CARS.</li>
 <li>From Digital Surface Models, all &quot;above terrain&quot; is removed with Bulldozer to make Digital Terrain Models.</li>
-<li>From this 3D data, we compare Digital Surface Models differences and Digital Height Models differences.</li>
+<li>Bulldozer produces also only &quot;above terrain&quot; terrain Digital Height Models (DSM-DTM differences)</li>
+<li>From this 3D data, we compare Digital Height Models differences.</li>
 </ul>
 <p><img src="images/picto_transparent.png" alt="CARS logo" width="70" align="right"/>
 <img src="images/bulldozer_logo.png" alt="Bulldozer logo" width="70" align="right"/>
@@ -16048,10 +16059,10 @@ bulldozer --conf config_bulldozer_post_event.yaml</code></pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Perspectives:">Perspectives:<a class="anchor-link" href="#Perspectives:">&#182;</a></h2><p>Applications:</p>
+<h2 id="Perspectives:">Perspectives:<a class="anchor-link" href="#Perspectives:">&#182;</a></h2><p>Satellite 3D is beginning to be more and more accessible.</p>
+<p>Applications:</p>
 <ul>
-<li>automatic count number of buildings</li>
-<li>Applications to find</li>
+<li>Automatic count number of buildings</li>
 </ul>
 
 </div>
