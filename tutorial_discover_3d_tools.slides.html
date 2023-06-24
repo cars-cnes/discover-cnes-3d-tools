@@ -15248,8 +15248,8 @@ div.jp-OutputPrompt {
 <li><p>Create a virtualenv</p>
 </li>
 </ol>
-<pre><code>   python -m venv venv-tutorial/
-   source venv-tutorial/bin
+<pre><code>python -m venv venv-tutorial/
+source venv-tutorial/bin/activate
 </code></pre>
 
 </div>
@@ -15267,15 +15267,14 @@ div.jp-OutputPrompt {
 </ol>
 <p>VLFEAT install:</p>
 <pre><code>git clone https://github.com/CNES/vlfeat.git
-cd vlfeat &amp;&amp; make &amp;&amp; cd ..
+cd vlfeat &amp;&amp; make MEX=$MATLABROOT/bin/ &amp;&amp; cd ..
 export CFLAGS=&quot;-I$PWD/vlfeat&quot;
 export LDFLAGS=&quot;-L$PWD/vlfeat/bin/glnxa64&quot;
 export LD_LIBRARY_PATH=&quot;$PWD/vlfeat/bin/glnxa64:$LD_LIBRARY_PATH&quot;</code></pre>
 <p>CARS install:</p>
 <pre><code>pip install --upgrade &quot;pip&lt;=23.0.1&quot; &quot;numpy&gt;=1.17.0&quot; cython
 pip install cars</code></pre>
-<p>Links:</p>
-<pre><code>[https://cars.readthedocs.io/en/latest/install.html](https://cars.readthedocs.io/en/latest/install.html)</code></pre>
+<p>CARS Doc: <a href="https://cars.readthedocs.io/">https://cars.readthedocs.io/</a></p>
 
 </div>
 </div>
@@ -15292,11 +15291,18 @@ pip install cars</code></pre>
 </ol>
 <pre><code>   pip install bulldozer-dtm
 </code></pre>
+<p>for last version:</p>
+<pre><code>    git clone https://github.com/cnes/bulldozer
+    cd bulldozer
+    pip install .
+</code></pre>
+<p>Bulldozer Doc: <a href="https://github.com/cnes/bulldozer/">https://github.com/cnes/bulldozer/</a></p>
 <ol start="4">
 <li>Install demcompare tool</li>
 </ol>
 <pre><code>   pip install demcompare
 </code></pre>
+<p>Demcompare Doc: <a href="https://cars.readthedocs.io/">https://demcompare.readthedocs.io/</a></p>
 
 </div>
 </div>
@@ -15309,10 +15315,10 @@ pip install cars</code></pre>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Virtualenv-(Linux)-Method">Virtualenv (Linux) Method<a class="anchor-link" href="#Virtualenv-(Linux)-Method">&#182;</a></h2><ol start="5">
-<li><p>Get tutorial data from <a href="https://github.com/cars-cnes/discover-cnes-3d-tools/">https://github.com/cars-cnes/discover-cnes-3d-tools/</a> in <strong>data_turkey</strong> directory : download from github or git clone :</p>
-<p>git clone <a href="https://github.com/cars-cnes/discover-cnes-3d-tools/">https://github.com/cars-cnes/discover-cnes-3d-tools/</a></p>
-</li>
+<li>Get tutorial data from <a href="https://github.com/cars-cnes/discover-cnes-3d-tools/">https://github.com/cars-cnes/discover-cnes-3d-tools/</a> in <strong>data_turkey</strong> directory : download from github or git clone :</li>
 </ol>
+<pre><code>git clone https://github.com/cars-cnes/discover-cnes-3d-tools/
+</code></pre>
 
 </div>
 </div>
@@ -15328,17 +15334,18 @@ pip install cars</code></pre>
 <li>Jupyter notebook installation</li>
 </ol>
 <p>Install Jupyter packages in previous virtualenv:</p>
-<pre><code>source ./venv/bin/activate # enter the virtualenv
+<pre><code>source ./venv-tutorial/bin/activate # enter the virtualenv if not done.
 pip install notebook rise bokeh
 # add any tool you may need through pip install</code></pre>
 <p>Build Jupyter kernel:</p>
 <pre><code>python -m ipykernel install --sys-prefix --name=cars-kernel --display-name=cars-kernel</code></pre>
 <ol start="9">
-<li><p>Run Local Jupyter environnement:</p>
-<p>jupyter notebook</p>
-</li>
-<li><p>Follow the proposed localhost link to the jupyter notebook web interface.</p>
-</li>
+<li>Run Local Jupyter environnement:</li>
+</ol>
+<pre><code>jupyter notebook
+</code></pre>
+<ol start="10">
+<li>Follow the proposed localhost link to the jupyter notebook web interface.</li>
 </ol>
 
 </div>
@@ -15389,7 +15396,7 @@ pip install notebook rise bokeh
 <li>Internet access</li>
 </ul>
 <p>Steps:</p>
-<ol start="5">
+<ol start="4">
 <li><p>Stop the server (&quot;Shutdown&quot;)</p>
 </li>
 <li><p>Reconnect to refresh kernels (&quot;Start my server&quot;) and select again default configuration.</p>
@@ -15459,6 +15466,7 @@ pip install notebook rise bokeh
 <li><p>2D images not enough to see the real differences automatically, 3D can really improve by seeing elevations differences on the scenes.</p>
 </li>
 </ul>
+<p>This tutorial show technical steps from satellite data to difference maps of the earthquake zone.</p>
 
 </div>
 </div>
@@ -15470,8 +15478,9 @@ pip install notebook rise bokeh
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Tutorial-scenario-in-Turkey">Tutorial scenario in Turkey<a class="anchor-link" href="#Tutorial-scenario-in-Turkey">&#182;</a></h2><ul>
+<h2 id="Turkey-scenario-scene">Turkey scenario scene<a class="anchor-link" href="#Turkey-scenario-scene">&#182;</a></h2><ul>
 <li>Scene chosen on Kahramanmaraş_Province in Turkey : download Turkey Pleaides data from <a href="https://github.com/cars-cnes/discover-cnes-3d-tools/data_turkey/">https://github.com/cars-cnes/discover-cnes-3d-tools/data_turkey/</a></li>
+<li>Use of Pleaides Panchromatic images (one band) for better quality</li>
 </ul>
 <p>Links:
 <a href="https://en.wikipedia.org/wiki/Kahramanmara%C5%9F_Province">https://en.wikipedia.org/wiki/Kahramanmara%C5%9F_Province</a></p>
@@ -15479,7 +15488,177 @@ pip install notebook rise bokeh
 </div>
 </div>
 </div>
-</div><div id="cell-id=639bd64e-f528-4211-a951-e9ec2fcef5e0" class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div></section><section >
+<div id="cell-id=2ad150e3-514b-447d-9666-e5355780742a" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Pre-event-Panchro-scene-1">Pre-event Panchro scene 1<a class="anchor-link" href="#Pre-event-Panchro-scene-1">&#182;</a></h2><p><img src="images/pre_event_img1.png" alt="collapse" width="550" align="center"/></p>
+
+</div>
+</div>
+</div>
+</div></section><section >
+<div id="cell-id=e7702ebf-cf4d-451c-b679-be16d5a4c22d" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Post-event-Panchro-scene-1">Post-event Panchro scene 1<a class="anchor-link" href="#Post-event-Panchro-scene-1">&#182;</a></h2><p><img src="images/post_event_img1.png" alt="collapse" width="550" align="center"/></p>
+
+</div>
+</div>
+</div>
+</div></section><section >
+<div id="cell-id=30aad402-bfbf-49c3-b5a3-3ee0a4138d56" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Pre-event-RGB-scene-1">Pre-event RGB scene 1<a class="anchor-link" href="#Pre-event-RGB-scene-1">&#182;</a></h2><p><img src="images/pre_event_color1.png" alt="collapse" width="550" align="center"/></p>
+
+</div>
+</div>
+</div>
+</div></section><section >
+<div id="cell-id=36b1804b-0fff-4897-ad2c-fd116ac325a0" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Pre-event-RGB-scene-2">Pre-event RGB scene 2<a class="anchor-link" href="#Pre-event-RGB-scene-2">&#182;</a></h2><p><img src="images/pre_event_color2.png" alt="collapse" width="550" align="center"/></p>
+
+</div>
+</div>
+</div>
+</div></section><section >
+<div id="cell-id=f77a4e64-1bcf-4bef-9251-cf17a8be7d50" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Post-event-RGB-scene-1">Post-event RGB scene 1<a class="anchor-link" href="#Post-event-RGB-scene-1">&#182;</a></h2><p><img src="images/post_event_color1.png" alt="collapse" width="550" align="center"/></p>
+
+</div>
+</div>
+</div>
+</div></section><section >
+<div id="cell-id=ceabaab2-feb0-4f4e-9b87-18e9bfd3dd8f" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Post-event-RGB-scene-2">Post-event RGB scene 2<a class="anchor-link" href="#Post-event-RGB-scene-2">&#182;</a></h2><p><img src="images/post_event_color2.png" alt="collapse" width="550" align="center"/></p>
+
+</div>
+</div>
+</div>
+</div></section><section >
+<div id="cell-id=60511249-5246-4556-ba4b-5aa39ec40348" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Reminders:">Reminders:<a class="anchor-link" href="#Reminders:">&#182;</a></h2><ul>
+<li>DSM: Digital Surface Models, represents the earth surface with all objects.</li>
+<li>DTM: Digital Terrain Models, bare ground surface without any objects like plants and buildings</li>
+</ul>
+<p><img src="images/dsm_dtm.svg" alt="collapse" width="300" align="center"/></p>
+<ul>
+<li>DHM: Digital Height Model (DSM-DTM), contains only the objects above the DTM.</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div></section></section><section ><section >
+<div id="cell-id=9ac124f2-00b6-49ab-8eda-f8b954b72087" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="Scenario-data-process-steps.">Scenario data process steps.<a class="anchor-link" href="#Scenario-data-process-steps.">&#182;</a></h1><p><img src="images/discover3d_pipeline.svg" alt="scenario data process pipeline" align="center"/></p>
+<ul>
+<li>From satellite pre and post event stereo data, pre and post event Digital Surface Models are created with CARS.</li>
+<li>From Digital Surface Models, all &quot;above terrain&quot; is removed with Bulldozer to make Digital Terrain Models.</li>
+<li>From this 3D data, we compare Digital Surface Models differences and Digital Height Models differences.</li>
+</ul>
+<p><img src="images/picto_transparent.png" alt="CARS logo" width="70" align="right"/>
+<img src="images/bulldozer_logo.png" alt="Bulldozer logo" width="70" align="right"/>
+<img src="images/demcompare_picto.png" alt="Demcompare logo" width="70" align="right"/></p>
+
+</div>
+</div>
+</div>
+</div></section></section><section ><section >
+<div id="cell-id=d4a9b959-41a9-499f-b3a4-ea4e854c949d" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="DSM-productions-with-CARS">DSM productions with CARS<a class="anchor-link" href="#DSM-productions-with-CARS">&#182;</a></h1><ol>
+<li><p>Tutorial CARS : see dedicated slides</p>
+</li>
+<li><p>Configure CARS with Turkey Data</p>
+</li>
+<li><p>Run pre event production</p>
+</li>
+<li><p>Run post event production</p>
+</li>
+</ol>
+
+</div>
+</div>
+</div>
+</div></section><section >
+<div id="cell-id=e8f40a47-4c55-49d6-a78b-334dd57ddbc9" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="CARS-configuration">CARS configuration<a class="anchor-link" href="#CARS-configuration">&#182;</a></h2><p><strong>config_cars_pre_event.json</strong> example in <strong>data_gizeh</strong> directory:</p>
+<pre><code>{
+    &quot;inputs&quot;: {
+        &quot;sensors&quot; : {
+            &quot;one&quot;: {
+                &quot;image&quot;: &quot;pre_event_img1.tif&quot;,
+                &quot;geomodel&quot;: &quot;pre_event_img1.geom&quot;,
+                &quot;color&quot;: &quot;pre_event_color1.tif&quot;,
+                &quot;no_data&quot;: 0
+            },
+            &quot;two&quot;: {
+                &quot;image&quot;: &quot;pre_event_img2.tif&quot;,
+                &quot;geomodel&quot;: &quot;pre_event_img2.geom&quot;,
+                &quot;color&quot;: &quot;pre_event_color2.tif&quot;,            
+                &quot;no_data&quot;: 0
+	       }
+        },
+        &quot;pairing&quot;: [[&quot;one&quot;, &quot;two&quot;]],
+        &quot;initial_elevation&quot;: &quot;srtm_dir/N37E036.hgt&quot;
+    },
+    &quot;output&quot;: {
+        &quot;out_dir&quot;: &quot;outputs_cars_pre_event&quot;,
+        &quot;dsm_basename&quot;: &quot;cars_dsm_pre_event.tif&quot;,
+        &quot;clr_basename&quot;: &quot;cars_clr_pre_event.tif&quot;
+    }
+}
+</code></pre>
+
+</div>
+</div>
+</div>
+</div><div id="cell-id=350babf9-8e03-468a-a32b-b54a8b666575" class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -15495,73 +15674,57 @@ pip install notebook rise bokeh
 </div>
 </div>
 
+</div></section><section >
+<div id="cell-id=f3c258fd-c871-43bf-90c4-51f7b759772b" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="CARS-DSM-production">CARS DSM production<a class="anchor-link" href="#CARS-DSM-production">&#182;</a></h2><p>Steps:</p>
+<pre><code># in virtualenv before !
+cd data_gizeh
+
+# run pre event production
+cars config_cars_pre_event.json
+# run post event production from post event scene 1 and post event scene 2
+cars config_cars_post_event.json</code></pre>
+
+</div>
+</div>
+</div>
+</div></section><section >
+<div id="cell-id=32cc5366-6861-4c96-aeb9-9ce9fb9da54c" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="CARS-DSM-results-pre-event">CARS DSM results pre event<a class="anchor-link" href="#CARS-DSM-results-pre-event">&#182;</a></h2><p><img src="images/cars_dsm_color_pre_event.png" alt="collapse" width="550" align="center"/></p>
+
+</div>
+</div>
+</div>
+</div></section><section >
+<div id="cell-id=c37333d4-4852-437c-9656-cdc9ec81d21d" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="CARS-DSM-results-post-event">CARS DSM results post event<a class="anchor-link" href="#CARS-DSM-results-post-event">&#182;</a></h2><p><img src="images/cars_dsm_color_post_event.png" alt="collapse" width="550" align="center"/></p>
+
+</div>
+</div>
+</div>
 </div></section></section><section ><section >
-<div id="cell-id=9ac124f2-00b6-49ab-8eda-f8b954b72087" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Scenario-data-process-steps.">Scenario data process steps.<a class="anchor-link" href="#Scenario-data-process-steps.">&#182;</a></h2><p><img src="images/discover3d_pipeline.svg" alt="scenario data process pipeline" align="center"/></p>
-<ul>
-<li>From satellite pre and post event stereo data, pre and post event Digital Surface Models are created with CARS.</li>
-<li>From Digital Surface Models, all &quot;sursol&quot; is removed with Bulldozer to make Digital Terrain Models</li>
-<li>From this 3D data, we compare Digital Surface Models differences and Digital Terrain Models differences.</li>
-</ul>
-<p><img src="images/picto_transparent.png" alt="CARS logo" width="70" align="right"/>
-<img src="images/bulldozer_logo.png" alt="Bulldozer logo" width="70" align="right"/>
-<img src="images/demcompare_picto.png" alt="Demcompare logo" width="70" align="right"/></p>
-
-</div>
-</div>
-</div>
-</div></section><section >
-<div id="cell-id=60511249-5246-4556-ba4b-5aa39ec40348" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Reminders:">Reminders:<a class="anchor-link" href="#Reminders:">&#182;</a></h2><ul>
-<li>DSM: Digital Surface Models, represents the earth surface with all objects.</li>
-<li>DTM: Digital Terrain Models, bare ground surface without any objects like plants and buildings</li>
-<li>DHM: Digital Height Model (DSM-DTM), contains only the objects above the DTM.</li>
-</ul>
-
-</div>
-</div>
-</div>
-</div>
-<div id="cell-id=d4a9b959-41a9-499f-b3a4-ea4e854c949d" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Pre-event-and-post-event-DSM-productions-with-CARS">Pre-event and post-event DSM productions with CARS<a class="anchor-link" href="#Pre-event-and-post-event-DSM-productions-with-CARS">&#182;</a></h1>
-</div>
-</div>
-</div>
-</div></section><section >
-<div id="cell-id=e8f40a47-4c55-49d6-a78b-334dd57ddbc9" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>TODO</p>
-
-</div>
-</div>
-</div>
-</div>
 <div id="cell-id=8e4c8c71-2dc9-4b74-842e-83bac9dd2ae1" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Pre-event-and-post-event-DTM-and-DHM-productions-with-Bulldozer">Pre-event and post-event DTM and DHM productions with Bulldozer<a class="anchor-link" href="#Pre-event-and-post-event-DTM-and-DHM-productions-with-Bulldozer">&#182;</a></h1>
+<h1 id="DTM-and-DHM-productions-with-Bulldozer">DTM and DHM productions with Bulldozer<a class="anchor-link" href="#DTM-and-DHM-productions-with-Bulldozer">&#182;</a></h1>
 </div>
 </div>
 </div>
@@ -15577,7 +15740,7 @@ pip install notebook rise bokeh
 </div>
 </div>
 </div>
-</div>
+</div></section></section><section ><section >
 <div id="cell-id=b0052177-c98d-4ae8-ab57-3d5fc2d0977b" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -15589,7 +15752,77 @@ pip install notebook rise bokeh
 </div>
 </div>
 </div></section><section >
+<div id="cell-id=f9a9ea60-805f-494d-be54-069be5a125a8" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="DSM-vs-DHM-differences">DSM vs DHM differences<a class="anchor-link" href="#DSM-vs-DHM-differences">&#182;</a></h2><p>DSM differences is a raw difference between post event et pre event.</p>
+<p>Using Digital Height Models allows:</p>
+<ul>
+<li>to normalize the height to zero (zero equal = terrain)</li>
+<li>remove vibrations of the satellite</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div></section><section >
+<div id="cell-id=d7863e42-389b-418f-95e8-e04060fa1dbe" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Demcompare-tutorial">Demcompare tutorial<a class="anchor-link" href="#Demcompare-tutorial">&#182;</a></h2><p>TODO</p>
+
+</div>
+</div>
+</div>
+</div></section><section >
 <div id="cell-id=776ff848-2638-4398-a47c-9b54f50a9611" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Steps-for-DSM-differences">Steps for DSM differences<a class="anchor-link" href="#Steps-for-DSM-differences">&#182;</a></h2><ol start="2">
+<li><p>Demcompare configuration</p>
+</li>
+<li><p>Demcompare run on DSM</p>
+</li>
+</ol>
+
+</div>
+</div>
+</div>
+</div></section><section >
+<div id="cell-id=b391f810-b1e1-428f-9d22-c5058422c9cf" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>todo</p>
+
+</div>
+</div>
+</div>
+</div></section><section >
+<div id="cell-id=ee442fca-b6a4-4e5c-b768-fa851573adf8" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>todo</p>
+
+</div>
+</div>
+</div>
+</div></section><section >
+<div id="cell-id=8845bc83-021f-437a-8116-82a61973b6e5" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -15607,8 +15840,12 @@ pip install notebook rise bokeh
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Conclusion">Conclusion<a class="anchor-link" href="#Conclusion">&#182;</a></h1><ul>
-<li>DSM: Digital Surface Models</li>
+<h1 id="Conclusion">Conclusion<a class="anchor-link" href="#Conclusion">&#182;</a></h1><p>This tutorial has shown a real scenario application using 3D maps difference before and after the event.</p>
+<p>CNES 3D tools have been demonstrated to execute scenario steps.</p>
+<p>Satellite can be a real added value:</p>
+<ul>
+<li>satellite revisit rate on a scene</li>
+<li>less expensive than a local LIDAR campaign</li>
 </ul>
 
 </div>
@@ -15621,8 +15858,9 @@ pip install notebook rise bokeh
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Perspectives:">Perspectives:<a class="anchor-link" href="#Perspectives:">&#182;</a></h2><ul>
-<li>Applications to count number of buildings</li>
+<h2 id="Perspectives:">Perspectives:<a class="anchor-link" href="#Perspectives:">&#182;</a></h2><p>Applications:</p>
+<ul>
+<li>automatic count number of buildings</li>
 <li>Applications to find</li>
 </ul>
 

@@ -19,6 +19,7 @@
     },
     "output": {
         "out_dir": "outputs_cars_post_event",
-        "dsm_basename": "cars_dsm_post_event.tif"
+        "dsm_basename": "cars_dsm_post_event.tif",
+        "clr_basename": "cars_clr_post_event.tif"
     }
 }

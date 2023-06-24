@@ -19,6 +19,7 @@
     },
     "output": {
         "out_dir": "outputs_cars_pre_event",
-        "dsm_basename": "cars_dsm_pre_event.tif"
+        "dsm_basename": "cars_dsm_pre_event.tif",
+        "clr_basename": "cars_clr_pre_event.tif"
     }
 }
