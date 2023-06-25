@@ -1,0 +1,19 @@
+
+blockdiag {
+  // set default colors
+  default_node_color = lightblue;
+  
+  // Set labels to nodes.
+  REF [label = "Reference DEM raster"];
+  SEC [label = "Secondary DEM raster"];
+  Coregistration [label = "Coregistration \n(option)"];
+  Stats [label = "Statistics"];
+  Report [label = "Report \n(option)"];
+
+
+  REF -> Coregistration -> Stats -> Report;
+  SEC -> Coregistration -> Stats -> Report;
+
+}
+
+

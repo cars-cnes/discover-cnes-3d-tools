@@ -15192,9 +15192,7 @@ div.jp-OutputPrompt {
 <li>Tutorial preparation</li>
 <li>Context</li>
 <li>How Demcompare works?</li>
-<li>High level design</li>
 <li>Quickstart</li>
-<li>Command Line Interface examples</li>
 </ul>
 
 </div>
@@ -15257,7 +15255,7 @@ pip install notebook rise bokeh
 # add any tool you may need through pip install
 </code></pre>
 <p>Build Jupyter kernel:</p>
-<pre><code>python -m ipykernel install --sys-prefix --name=Demcompare-kernel --display-name=Demcompare-kernel
+<pre><code>python -m ipykernel install --sys-prefix --name=dc-kernel --display-name=dc-kernel
 </code></pre>
 <p>Jupyter environnement:</p>
 <pre><code>jupyter notebook
@@ -15298,8 +15296,8 @@ pip install notebook rise bokeh
 <p><img src="img/logo_demcompare.png" alt="Demcompare logo" width="200" align="right"/></p>
 <p>Web sites:</p>
 <ul>
-<li><a href="https://github.com/cnes/Demcompare/">https://github.com/cnes/Demcompare/</a></li>
-<li><a href="https://demcompare.readthedocs.io/">https://demcompare.readthedocs.io/</a></li>
+<li>Repository: <a href="https://github.com/cnes/Demcompare/">https://github.com/cnes/Demcompare/</a></li>
+<li>Documentation: <a href="https://demcompare.readthedocs.io/">https://demcompare.readthedocs.io/</a></li>
 </ul>
 
 </div>
@@ -15354,7 +15352,7 @@ pip install notebook rise bokeh
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h3 id="Glossary">Glossary<a class="anchor-link" href="#Glossary">&#182;</a></h3><p>DSM : Digital Surface Model</p>
 <p>DEM: Digital Elevation Model. Usually means all elevation models in raster: DSM, DTM,…</p>
-<p>DSM: Digital Surface Model. Represents the earth’s surface and includes all objects on it. Demcompare generates DSMs.</p>
+<p>DSM: Digital Surface Model. Represents the earth’s surface and includes all objects on it.</p>
 <p>DTM: Digital Terrain Model. Represents bare ground surface without any objects like plants and buildings.</p>
 <p>ROI: Region of Interest means a subpart of a DSM raster.</p>
 
@@ -15395,7 +15393,9 @@ pip install notebook rise bokeh
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Demcompare-pipeline">Demcompare pipeline<a class="anchor-link" href="#Demcompare-pipeline">&#182;</a></h2>
+<h2 id="Demcompare-pipeline">Demcompare pipeline<a class="anchor-link" href="#Demcompare-pipeline">&#182;</a></h2><p><img src="img/demcompare_pipeline.svg" alt="Demcompare logo" align="center"/></p>
+<p>From data inputs, a <strong>coregistration</strong> optional step is executed before a statistics configurable step. A report is generated optionnally.</p>
+
 </div>
 </div>
 </div>
@@ -15406,7 +15406,37 @@ pip install notebook rise bokeh
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Demcompare-coregistration">Demcompare coregistration<a class="anchor-link" href="#Demcompare-coregistration">&#182;</a></h2>
+<h2 id="Data-inputs">Data inputs<a class="anchor-link" href="#Data-inputs">&#182;</a></h2><ul>
+<li>REF: reference input</li>
+<li>SEC: raster to compare to the reference</li>
+</ul>
+<p>Some elements can be configured:</p>
+<ul>
+<li>geoid</li>
+<li>no data</li>
+<li>ROI</li>
+<li>classification layers</li>
+</ul>
+<p>Follow <a href="https://demcompare.readthedocs.io/en/latest/userguide/inputs.html">https://demcompare.readthedocs.io/en/latest/userguide/inputs.html</a> documentation</p>
+
+</div>
+</div>
+</div>
+</div></section><section >
+<div id="cell-id=ae75d39b-8966-4559-b6c8-303fe1788b0f" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Demcompare-coregistration">Demcompare coregistration<a class="anchor-link" href="#Demcompare-coregistration">&#182;</a></h2><p>The coregistration step:</p>
+<ul>
+<li>reprojects inputs with offset estimation and resampling (depending on a parameter <strong>sampling_source</strong>)</li>
+<li>does coregistration (Nuth and Kaab) to find planimetric x,y shifts to align rasters</li>
+</ul>
+<p>An altimetric shift is also given but not applied.</p>
+<p>Follow <a href="https://demcompare.readthedocs.io/en/latest/userguide/coregistration.html">https://demcompare.readthedocs.io/en/latest/userguide/coregistration.html</a> documentation</p>
+
 </div>
 </div>
 </div>
@@ -15417,7 +15447,14 @@ pip install notebook rise bokeh
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Demcompare-statistics">Demcompare statistics<a class="anchor-link" href="#Demcompare-statistics">&#182;</a></h2>
+<h2 id="Demcompare-statistics">Demcompare statistics<a class="anchor-link" href="#Demcompare-statistics">&#182;</a></h2><p>The statistics step computes statistics on REF-SEC difference (coregistered and reprojected) depending on:</p>
+<ul>
+<li>metrics chosen (scalars or vectors)</li>
+<li>classification layers and configured modes (global, segmentation, slope, fusion, ...)</li>
+<li><strong>remove_outliers</strong> input parameter</li>
+</ul>
+<p>Follow <a href="https://demcompare.readthedocs.io/en/latest/userguide/statistics.html">https://demcompare.readthedocs.io/en/latest/userguide/statistics.html</a> documentation.</p>
+
 </div>
 </div>
 </div>
@@ -15428,12 +15465,18 @@ pip install notebook rise bokeh
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Demcompare-report-(experimental)">Demcompare report (experimental)<a class="anchor-link" href="#Demcompare-report-(experimental)">&#182;</a></h2>
+<h2 id="Demcompare-report-(experimental)">Demcompare report (experimental)<a class="anchor-link" href="#Demcompare-report-(experimental)">&#182;</a></h2><p>A report is generated:</p>
+<ul>
+<li>presents initial and final snapshots, histograms and cumulative density functions.</li>
+<li>presents aggregated statistics.</li>
+<li>show final configuration</li>
+</ul>
+
 </div>
 </div>
 </div>
 </div></section></section><section ><section >
-<div id="cell-id=78cf8135" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div id="cell-id=5ed81adb-36c0-4dfc-9021-1f6860dc87e9" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
