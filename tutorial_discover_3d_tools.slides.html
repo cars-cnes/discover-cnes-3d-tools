@@ -15197,7 +15197,7 @@ div.jp-OutputPrompt {
 <li>Scenario steps</li>
 <li>Pre-event and post-event DSM productions with CARS</li>
 <li>Pre-event and post-event DTM productions with Bulldozer</li>
-<li>DTM differences with Demcompare</li>
+<li>DHM differences with Demcompare</li>
 </ul>
 <p>Slides are available here: <a href="https://cars-cnes.github.io/discover-cnes-3d-tools/">https://cars-cnes.github.io/discover-cnes-3d-tools/</a></p>
 <p>Tutorials sources: <a href="https://github.com/cars-cnes/discover-cnes-3d-tools">https://github.com/cars-cnes/discover-cnes-3d-tools</a></p>
@@ -15412,7 +15412,7 @@ ln -s /softs/projets/cars/kits/cars-0.7.0/jupyter/kernels/cars-0.7.0/  .local/sh
 </li>
 </ol>
 <p>Command:</p>
-<pre><code>cp -R /softs/project/cars/tutorials/discover-cnes-3d-tools/ ~/
+<pre><code>cp -R /softs/projets/cars/tutorial/discover-cnes-3d-tools/ ~/
 cd ~/discover-3d-tools/</code></pre>
 <ol start="8">
 <li>In a terminal, you can use cnes 3d tools using already install module</li>
@@ -15489,9 +15489,16 @@ cd ~/discover-3d-tools/</code></pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Turkey-scenario-scene">Turkey scenario scene<a class="anchor-link" href="#Turkey-scenario-scene">&#182;</a></h2><ul>
-<li>Scene chosen on Kahramanmaraş_Province in Turkey : download Turkey Pleaides data from <a href="https://github.com/cars-cnes/discover-cnes-3d-tools/data_turkey/">https://github.com/cars-cnes/discover-cnes-3d-tools/data_turkey/</a></li>
-<li>Use of Pleaides Panchromatic images (one band) for better quality</li>
+<h2 id="Turkey-scenario-scene">Turkey scenario scene<a class="anchor-link" href="#Turkey-scenario-scene">&#182;</a></h2><p>Scene chosen on Kahramanmaraş_Province in Turkey : download Turkey Pleaides data from <a href="https://github.com/cars-cnes/discover-cnes-3d-tools/">https://github.com/cars-cnes/discover-cnes-3d-tools/</a> in <strong>data_turkey/</strong> directory :</p>
+<ul>
+<li>Pre-event pleiades images : 2016/04/23</li>
+<li>Post-event pleiades images: 2023/04/15</li>
+</ul>
+<p>Remarks:</p>
+<ul>
+<li>Need at least 2 images to do 3D views (stereo).</li>
+<li>Pleaides Panchromatic images (one band) are used for 3D for better quality</li>
+<li>RGB scenes are also used to better see the scenes.</li>
 </ul>
 <p>Links:
 <a href="https://en.wikipedia.org/wiki/Kahramanmara%C5%9F_Province">https://en.wikipedia.org/wiki/Kahramanmara%C5%9F_Province</a></p>
@@ -15582,7 +15589,7 @@ cd ~/discover-3d-tools/</code></pre>
 <li>DSM: Digital Surface Models, represents the earth surface with all objects.</li>
 <li>DTM: Digital Terrain Models, bare ground surface without any objects like plants and buildings</li>
 </ul>
-<p><img src="images/dsm_dtm.svg" alt="collapse" width="300" align="center"/></p>
+<p><img src="images/dsm_dtm_dhm_illustration.png" alt="collapse" width="300" align="center"/></p>
 <ul>
 <li>DHM: Digital Height Model (DSM-DTM), contains only the objects above the DTM.</li>
 </ul>
@@ -15730,17 +15737,6 @@ cars config_cars_post_event.json</code></pre>
 <li><p>Run post event DTM and DHM production</p>
 </li>
 </ol>
-
-</div>
-</div>
-</div>
-</div></section><section >
-<div id="cell-id=85f03bbc-75d8-419d-a5d7-75f72b466377" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 
 </div>
 </div>
@@ -15999,18 +15995,6 @@ bulldozer --conf config_bulldozer_post_event.yaml</code></pre>
 </div>
 </div>
 </div></section><section >
-<div id="cell-id=97f9340b-7768-4ac4-8cd3-259e565df546" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="DHM-differences-(POST-PRE)-results-without-pre-and-post-coregistration">DHM differences (POST-PRE) results without pre and post coregistration<a class="anchor-link" href="#DHM-differences-(POST-PRE)-results-without-pre-and-post-coregistration">&#182;</a></h2><p><img src="images/demcompare_dhm_diff_without_coreg.png" alt="collapse" width="550" align="center"/></p>
-
-</div>
-</div>
-</div>
-</div></section><section >
 <div id="cell-id=0418d4f5-a30f-4787-a247-acd810c2083b" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -16068,6 +16052,24 @@ bulldozer --conf config_bulldozer_post_event.yaml</code></pre>
 <ul>
 <li>Automatic count number of buildings</li>
 <li>helping people that labelize the impacted areas</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div></section></section><section ><section >
+<div id="cell-id=7d8668f6-0fea-4a0c-8a03-50673f57fce2" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="Questions-?">Questions ?<a class="anchor-link" href="#Questions-?">&#182;</a></h1><p>General 3D CNES tools contact: <a href="cars@cnes.fr">cars@cnes.fr</a></p>
+<p>Specific contact:</p>
+<ul>
+<li>CARS: david.youssefi@cnes.fr</li>
+<li>Bulldozer: dimitri.lallement@cnes.fr</li>
+<li>Demcompare: emmanuel.dubois@cnes.fr</li>
 </ul>
 
 </div>
