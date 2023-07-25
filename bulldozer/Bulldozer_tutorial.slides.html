@@ -14415,14 +14415,16 @@ Environment setup with <code>virtualenv</code>:</p>
 </div></section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Installation">Installation<a class="anchor-link" href="#Installation">&#182;</a></h2><h3 id="Using-Github">Using Github<a class="anchor-link" href="#Using-Github">&#182;</a></h3><div class="highlight"><pre><span></span><span class="c1"># Clone the project</span>
+<h2 id="Installation">Installation<a class="anchor-link" href="#Installation">&#182;</a></h2><h3 id="Using-Pypi">Using Pypi<a class="anchor-link" href="#Using-Pypi">&#182;</a></h3><div class="highlight"><pre><span></span>pip install bulldozer-dtm
+</pre></div>
+<h3 id="Using-Github">Using Github<a class="anchor-link" href="#Using-Github">&#182;</a></h3><div class="highlight"><pre><span></span><span class="c1"># Clone the project</span>
 git clone https://github.com/CNES/bulldozer.git
 <span class="nb">cd</span> bulldozer/
 
 <span class="c1"># Install the library</span>
 pip install .
 </pre></div>
-<p><em>Install check: When you run <code>bulldozer --version</code> you should get <code>v1.0.0</code></em></p>
+<p><em>Install check: When you run <code>bulldozer --version</code> you should get <code>v1.0.1</code></em></p>
 
 </div>
 </div></section><section>
@@ -14460,11 +14462,7 @@ pip install .
 </ul>
 <p><em>Be aware that Bulldozer is new and still in devlopment. Feel free to communicate your needs to the team :)</em></p>
 <p>License:  Apache-2.0</p>
-<p>Links:</p>
-<ul>
-<li>Repository: <a href="https://github.com/cnes/bulldozer/">github.com/cnes/bulldozer/</a></li>
-<li>ISPRS Publication: <a href="https://www.int-arch-photogramm-remote-sens-spatial-inf-sci.net/XLIII-B2-2022/409/2022/">D. Lallement, P. Lassalle, Y. Ott, R. Demortier, and J. Delvit, 2022. BULLDOZER: AN AUTOMATIC SELF-DRIVEN LARGE SCALE DTM EXTRACTION METHOD FROM DIGITAL SURFACE MODEL. ISPRS - International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences.</a></li>
-</ul>
+<p>Repository: <a href="https://github.com/cnes/bulldozer/">github.com/cnes/bulldozer/</a></p>
 
 </div>
 </div></section><section>
@@ -14624,10 +14622,10 @@ The first one is the main part (the only required elements in the config file):<
 <div class="highlight"><pre><span></span><span class="c1">#-------------------------#</span>
 <span class="c1">#       Parameters        #</span>
 <span class="c1">#-------------------------#</span>
-<span class="c1"># Input DSM path (expected format: &quot;&lt;folder_1&gt;/&lt;folder_2&gt;/&lt;file&gt;.&lt;[tif/tiff]&gt;&quot;)</span>
-<span class="nt">dsmPath </span><span class="p">:</span> <span class="s">&quot;outputs_cars_pre_event/cars_dsm_pre_event.tif&quot;</span>
-<span class="c1"># Output directory path (if the directory doesn&#39;t exist, create it)</span>
-<span class="nt">outputDir </span><span class="p">:</span> <span class="s">&quot;outputs_bulldozer_pre_event&quot;</span>
+<span class="c1"># [Required] - Input DSM path (expected format: &quot;&lt;folder_1&gt;/&lt;folder_2&gt;/&lt;file&gt;.&lt;[tif/tiff]&gt;&quot;) </span>
+<span class="nt">dsm_path </span><span class="p">:</span> <span class="s">&quot;outputs_cars_pre_event/cars_dsm_pre_event.tif&quot;</span>
+<span class="c1"># [Required] - Output directory path (if the directory doesn&#39;t exist, create it)</span>
+<span class="nt">output_dir </span><span class="p">:</span> <span class="s">&quot;outputs_bulldozer_pre_event&quot;</span>
 </pre></div>
 
 </div>
@@ -14638,12 +14636,12 @@ The first one is the main part (the only required elements in the config file):<
 <div class="highlight"><pre><span></span><span class="c1">#-------------------------#</span>
 <span class="c1">#         Options         #</span>
 <span class="c1">#-------------------------#</span>
-<span class="c1"># If True, generates the DHM (DSM - DTM) in the output directory </span>
-<span class="nt">generateDhm </span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">True</span>
-<span class="c1"># If null, the output DTM resolution will be the same as the input DSM (float value in meter)</span>
-<span class="nt">outputResolution </span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">null</span>
-<span class="c1"># If null, bulldozer will use the maximum number of available CPU on your system</span>
-<span class="nt">nbMaxWorkers </span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">16</span>
+<span class="c1"># [Optional] - If True, generates the DHM (DSM - DTM) in the output directory </span>
+<span class="nt">generate_dhm </span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">True</span>
+<span class="c1"># [Optional] - If null, the output DTM resolution will be the same as the input DSM (float value in meter)</span>
+<span class="nt">output_resolution </span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">null</span>
+<span class="c1"># [Optional] - If null, bulldozer will use the maximum number of available CPU on your system</span>
+<span class="nt">nb_max_workers </span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">16</span>
 </pre></div>
 
 </div>
@@ -14654,17 +14652,18 @@ The first one is the main part (the only required elements in the config file):<
 <div class="highlight"><pre><span></span><span class="c1">#-------------------------#</span>
 <span class="c1">#    Advanced settings    #</span>
 <span class="c1">#-------------------------#</span>
-
-<span class="c1"># Foreground max object width (in meter)</span>
-<span class="nt">maxObjectWidth </span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">16</span>
-<span class="c1"># If True, this flag allows snapping DTM values above the DSM to the DSM values in order to satisfy the property that DTM is always below the DSM.</span>
-<span class="nt">checkIntersection</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">False</span>
-<span class="c1"># Minimum valid height value, None or a float value. If null this parameter is ignored</span>
-<span class="nt">minValidHeight</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">0.0</span>
-<span class="c1"># If null, the nodata value will be extracted from the input DSM (float value or nan)</span>
-<span class="nt">noData </span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">null</span>
-<span class="c1"># If True, keep the intermediate results</span>
-<span class="nt">developperMode </span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">False</span>
+<span class="c1"># [Optional] - Foreground max object width (in meter)</span>
+<span class="nt">max_object_width </span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">16</span>
+<span class="c1"># [Optional] - If True, this flag allows snapping DTM values above the DSM to the DSM values in order to satisfy the property that DTM is always below the DSM.</span>
+<span class="nt">check_intersection</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">False</span>
+<span class="c1"># [Optional] - If null, the nodata value will be extracted from the input DSM (float value or nan)</span>
+<span class="nt">nodata </span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">null</span>
+<span class="c1"># [Optional] - Minimum valid height value, None or a float value. If null this parameter is ignored</span>
+<span class="nt">min_valid_height</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">null</span>
+<span class="c1"># [Optional] - If True, keep the intermediate results</span>
+<span class="nt">developper_mode </span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">False</span>
+<span class="c1"># [Optional] - If True, keep the intermediate DTM at each level of the pyramid</span>
+<span class="nt">keep_inter_dtm </span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">False</span>
 </pre></div>
 
 </div>
@@ -14677,17 +14676,17 @@ The first one is the main part (the only required elements in the config file):<
 <span class="c1">#-------------------------#</span>
 <span class="c1"># /!\ Modify those data at your own risk (it is suggested to keep the default values) /!\</span>
 
-<span class="c1"># DetectDisturbedAreasAndFill part</span>
-<span class="nt">slopeThreshold </span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">2.0</span>
-<span class="c1"># numnumber of evaluated axis. Vertical and horizontal if true else vertical, horizontal and diagonals.</span>
-<span class="nt">fourConnexity </span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">True</span>
+<span class="c1"># [Optional] - DetectDisturbedAreasAndFill part</span>
+<span class="nt">slope_threshold </span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">2.0</span>
+<span class="c1"># [Optional] - Number of evaluated axis. Vertical and horizontal if True else vertical, horizontal and diagonals.</span>
+<span class="nt">four_connexity </span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">True</span>
 
-<span class="c1"># DtmExtraction part</span>
-<span class="nt">uniformFilterSize </span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">3</span>
-<span class="nt">preventUnhookIter </span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">10</span>
-<span class="nt">numOuterIter </span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">50</span>
-<span class="nt">numInnerIter </span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">10</span>
-<span class="nt">mpTileSize </span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">1500</span>
+<span class="c1"># [Optional] - DtmExtraction parameters</span>
+<span class="nt">uniform_filter_size </span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">3</span>
+<span class="nt">prevent_unhook_iter </span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">10</span>
+<span class="nt">num_outer_iter </span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">50</span>
+<span class="nt">num_inner_iter </span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">10</span>
+<span class="nt">mp_tile_size </span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">1500</span>
 </pre></div>
 
 </div>
@@ -14697,12 +14696,12 @@ The first one is the main part (the only required elements in the config file):<
 <h2 id="Bulldozer-Python-API">Bulldozer Python API<a class="anchor-link" href="#Bulldozer-Python-API">&#182;</a></h2><p>You can run <strong>Bulldozer</strong> with Python API using the config file:</p>
 <div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bulldozer.pipeline.bulldozer_pipeline</span> <span class="kn">import</span> <span class="n">dsm_to_dtm</span>
 
-<span class="n">dsm_to_dtm</span><span class="p">(</span><span class="n">config_path</span><span class="o">=</span><span class="s2">&quot;conf/configuration_template.yaml&quot;</span><span class="p">)</span>
+<span class="n">dsm_to_dtm</span><span class="p">(</span><span class="n">config_path</span><span class="o">=</span><span class="s2">&quot;conf/config_bulldozer_pre_event.yaml&quot;</span><span class="p">)</span>
 </pre></div>
 <p>Or by providing directly the input parameters (missing parameters will be replaced by default values):</p>
 <div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bulldozer.pipeline.bulldozer_pipeline</span> <span class="kn">import</span> <span class="n">dsm_to_dtm</span>
  <span class="c1"># Example with a specific number of workers</span>
- <span class="n">dsm_to_dtm</span><span class="p">(</span><span class="n">dsm_path</span><span class="o">=</span><span class="s2">&quot;&lt;input_dsm.tif&gt;&quot;</span><span class="p">,</span> <span class="n">output_dir</span><span class="o">=</span><span class="s2">&quot;&lt;output_dir&gt;&quot;</span><span class="p">,</span> <span class="n">nb_max_workers</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span>
+ <span class="n">dsm_to_dtm</span><span class="p">(</span><span class="n">dsm_path</span><span class="o">=</span><span class="s2">&quot;outputs_cars_pre_event/cars_dsm_pre_event.tif&quot;</span><span class="p">,</span> <span class="n">output_dir</span><span class="o">=</span><span class="s2">&quot;outputs_bulldozer_pre_event&quot;</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -14731,7 +14730,6 @@ It can be helpfull if you want to detect disturbed areas (shadow, water, etc.) i
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Upcoming-works">Upcoming works<a class="anchor-link" href="#Upcoming-works">&#182;</a></h2><ul>
-<li>Interface harmonisation (very soon!)</li>
 <li>External stability guarantee</li>
 <li>Full mkdocs documentation</li>
 <li>Publish unit tests</li>
